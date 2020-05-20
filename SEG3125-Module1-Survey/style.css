@@ -1,10 +1,6 @@
-#mainContainer {
-    margin: auto;
-    max-width: 80%;
-}
-
-#topSection {
-    margin-bottom: 35px;
+body {
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -15,6 +11,58 @@ img {
     width: 100%;
 }
 
-input {
-    width: 100%;;
+th, td {
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: red;
+    border-top: 2px solid black;
+    max-width: 200%;
+}
+
+#header {
+    background: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#mainContainer {
+    margin: auto;
+    max-width: 80%;
+}
+
+#topSection {
+    margin-bottom: 35px;
+}
+
+#multiSelect {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    width: 99%;
+}
+
+.question {
+    border: 1px solid black;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.topic {
+    text-align: left;
+}
+
+.qTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

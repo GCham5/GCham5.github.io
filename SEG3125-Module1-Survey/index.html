@@ -6,9 +6,13 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
+
+        <div id="header">
+            <h1>IGN Design Survey</h1>
+        </div>
+
         <div id="mainContainer">
             <div id="topSection">
-                <h1>IGN Design Survey</h1>
                 <br>
                 <br>
                 <p>This survey will evaluate the UI design of <a href="http://www.ign.com">IGN</a></p>
@@ -19,10 +23,134 @@
 
             <form name="survey">
                 <div class="question">
-                    <label>What are your thoughts on IGN's infinite vertical scroll?</label>
-                    <input type="text">
+                    <p class="qTitle">What are your thoughts on IGN's infinite vertical scroll?</p>
+                    <input type="text" class="text">
                 </div>
+
+                <div class="question">
+                    <p class="qTitle">Do you wish IGN has a carousel for main atricles instead of the column-like style shown above?</p>
+                    <input type="radio" id="yes" name="yorno" value="yes">
+                    <label for="yes">YES</label>
+                    <input type="radio" id="no" name="yorno" value="no">
+                    <label for="no">NO</label>
+                </div>
+
+                <div class="question">
+                    <p class="qTitle">Do you wish IGN displayed a greater, lesser or the same amount articles on the screen?</p>
+                    <select name="articleNumber">
+                        <option value="less">Less</option>
+                        <option value="same">Same</option>
+                        <option value="more">More</option>
+                        <option value="other">Don't Know</option>
+                    </select>
+                </div>
+
+                <div class="question" id="multiSelect">
+                    <p class="qTitle">What features/aspects of IGN's website do you enjoy? (Select all that apply)</p>
+                    <div class="checkboxQ">
+                        <input type="checkbox" id="font" name="font" value="font">
+                        <label for="font">Font type</label>
+                    </div>
+                    <div class="checkboxQ">
+                        <input type="checkbox" id="navbar" name="navbar" value="navbar">
+                        <label for="navbar">Navbar</label>
+                    </div>
+                    <div class="checkboxQ">
+                        <input type="checkbox" id="signin" name="signin" value="singin">
+                        <label for="singin">SignIn Pop-Up</label>
+                    </div>
+                    <div class="checkboxQ">
+                        <input type="checkbox" id="commentSection" name="commentSection" value="commentSection">
+                        <label for="commentSection">Comment Section</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="qTitle">How satisfied are you with the following?</p>
+
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Very Unsatisfied</th>
+                            <th>Unsatisfied</th>
+                            <th>Neutral</th>
+                            <th>Satisfied</th>
+                            <th>Very Satisfied</th>
+                        </tr>
+
+                        <tr>
+                            <td class="topic">Ad placements</td>
+                            <td>
+                                <input type="radio" name="ad" value="vus">
+                            </td>
+                            <td>
+                                <input type="radio" name="ad" value="vs">
+                            </td>
+                            <td>
+                                <input type="radio" name="ad" value="n">
+                            </td>
+                            <td>
+                                <input type="radio" name="ad" value="s">
+                            </td>
+                            <td>
+                                <input type="radio" name="ad" value="vs">
+                            </td>
+                         </tr>
+
+                         <tr>
+                            <td class="topic">Overall layout of website</td>
+                            <td>
+                                <input type="radio" name="layout" value="vus">
+                            </td>
+                            <td>
+                                <input type="radio" name="layout" value="vs">
+                            </td>
+                            <td>
+                                <input type="radio" name="layout" value="n">
+                            </td>
+                            <td>
+                                <input type="radio" name="layout" value="s">
+                            </td>
+                            <td>
+                                <input type="radio" name="layout" value="vs">
+                            </td>
+                         </tr>
+
+                         <tr>
+                            <td  class="topic">Overall performance/speed</td>
+                            <td>
+                                <input type="radio" name="performance" value="vus">
+                            </td>
+                            <td>
+                                <input type="radio" name="performance" value="vs">
+                            </td>
+                            <td>
+                                <input type="radio" name="performance" value="n">
+                            </td>
+                            <td>
+                                <input type="radio" name="performance" value="s">
+                            </td>
+                            <td>
+                                <input type="radio" name="performance" value="vs">
+                            </td>
+                         </tr>
+                    </table>
+                </div>
+
+                <div class="question">
+                    <p class="qTitle">Comments</p>
+                    <input type="text" class="text">
+                </div>
+
+                <input type="submit" value="Submit">
+
             </form>
         </div>
+
+
+        <footer>
+            <p>Wesbite designed by Georges Chamoun</p>
+        </footer>
+
     </body>
 </html>
