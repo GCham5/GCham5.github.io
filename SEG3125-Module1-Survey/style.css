@@ -1,0 +1,20 @@
+#mainContainer {
+    margin: auto;
+    max-width: 80%;
+}
+
+#topSection {
+    margin-bottom: 35px;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+input {
+    width: 100%;;
+}
