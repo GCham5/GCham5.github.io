@@ -8,7 +8,7 @@
     <body>
 
         <div id="header">
-            <h1>IGN Design Survey</h1>
+            <h1>IGN UI Design Survey</h1>
         </div>
 
         <div id="mainContainer">
@@ -24,15 +24,19 @@
             <form name="survey">
                 <div class="question">
                     <p class="qTitle">What are your thoughts on IGN's infinite vertical scroll?</p>
-                    <input type="text" class="text">
+                    <input type="text" class="text" placeholder="Enter here...">
                 </div>
 
                 <div class="question">
-                    <p class="qTitle">Do you wish IGN has a carousel for main atricles instead of the column-like style shown above?</p>
-                    <input type="radio" id="yes" name="yorno" value="yes">
-                    <label for="yes">YES</label>
-                    <input type="radio" id="no" name="yorno" value="no">
-                    <label for="no">NO</label>
+                    <p class="qTitle">Do you wish IGN had a carousel for main atricles instead of the column-like style shown above?</p>
+                    <div class="qChoice">
+                        <input type="radio" id="yes" name="yorno" value="yes">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="qChoice">
+                        <input type="radio" id="no" name="yorno" value="no">
+                        <label for="no">No</label>
+                    </div>
                 </div>
 
                 <div class="question">
@@ -45,21 +49,21 @@
                     </select>
                 </div>
 
-                <div class="question" id="multiSelect">
+                <div class="question">
                     <p class="qTitle">What features/aspects of IGN's website do you enjoy? (Select all that apply)</p>
-                    <div class="checkboxQ">
+                    <div class="qChoice">
                         <input type="checkbox" id="font" name="font" value="font">
                         <label for="font">Font type</label>
                     </div>
-                    <div class="checkboxQ">
+                    <div class="qChoice">
                         <input type="checkbox" id="navbar" name="navbar" value="navbar">
                         <label for="navbar">Navbar</label>
                     </div>
-                    <div class="checkboxQ">
-                        <input type="checkbox" id="signin" name="signin" value="singin">
-                        <label for="singin">SignIn Pop-Up</label>
+                    <div class="qChoice">
+                        <input type="checkbox" id="signin" name="signin" value="signin">
+                        <label for="signin">SignIn Pop-Up</label>
                     </div>
-                    <div class="checkboxQ">
+                    <div class="qChoice">
                         <input type="checkbox" id="commentSection" name="commentSection" value="commentSection">
                         <label for="commentSection">Comment Section</label>
                     </div>
@@ -67,7 +71,6 @@
 
                 <div class="question">
                     <p class="qTitle">How satisfied are you with the following?</p>
-
                     <table>
                         <tr>
                             <th></th>
@@ -79,7 +82,7 @@
                         </tr>
 
                         <tr>
-                            <td class="topic">Ad placements</td>
+                            <td class="topic">Placement of Ads</td>
                             <td>
                                 <input type="radio" name="ad" value="vus">
                             </td>
@@ -139,14 +142,13 @@
 
                 <div class="question">
                     <p class="qTitle">Comments</p>
-                    <input type="text" class="text">
+                    <input type="text" class="text" placeholder="Enter comments here...">
                 </div>
 
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" id="submit">
 
             </form>
         </div>
-
 
         <footer>
             <p>Wesbite designed by Georges Chamoun</p>

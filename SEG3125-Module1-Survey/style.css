@@ -24,14 +24,17 @@ footer {
     padding-bottom: 20px;
     padding-left: 20px;
     background: red;
+    color: white;
     border-top: 2px solid black;
     max-width: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #header {
     background: red;
     padding-top: 10px;
     padding-bottom: 10px;
+    border-bottom: 2px solid black;
 }
 
 #mainContainer {
@@ -43,9 +46,14 @@ footer {
     margin-bottom: 35px;
 }
 
-#multiSelect {
-    display: flex;
-    flex-direction: column;
+#submit {
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    background-color: azure;
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .text {
@@ -65,4 +73,12 @@ footer {
 
 .qTitle {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid black;
+}
+
+.qChoice {
+    width: 150px;
+    padding: 5px;
+    margin: 2px;
 }
