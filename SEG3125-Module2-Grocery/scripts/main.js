@@ -45,7 +45,21 @@ function populateListProductChoices(slct1, slct2) {
     }
 		
 	// obtain a reduced list of products based on restrictions
-    var optionArray = restrictListProducts(products, dietSelectionList);
+	var optionArray = restrictListProducts(products, dietSelectionList);
+	
+	//sorting by price
+	optionArray.sort(function(prod1, prod2) {
+		var price1 = prod1.price;
+		var price2 = prod2.price;
+
+		if(price1 < price2){
+			return -1;
+		}else if (price1 > price2){
+			return 1;
+		}
+
+		return 0;
+	})
 
 	// for each item in the array, create a checkbox element, each containing information such as:
 	// <input type="checkbox" name="product" value="Bread">
@@ -53,7 +67,8 @@ function populateListProductChoices(slct1, slct2) {
 		
 	for (i = 0; i < optionArray.length; i++) {
 			
-		var productName = optionArray[i];
+		var productName = optionArray[i].name;
+		var productPrice = optionArray[i].price;
 		// create the checkbox and add in HTML DOM
 		var checkbox = document.createElement("input");
 		checkbox.type = "checkbox";
@@ -66,6 +81,11 @@ function populateListProductChoices(slct1, slct2) {
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
 		s2.appendChild(label);
+
+		var priceLabel = document.createElement('label');
+		priceLabel.htmlFor = productName;
+		priceLabel.appendChild(document.createTextNode(" - $" + productPrice));
+		s2.appendChild(priceLabel);
 		
 		// create a breakline node and add in HTML DOM
 		s2.appendChild(document.createElement("br"));    
@@ -87,17 +107,20 @@ function selectedItems(){
 	// build list of selected item
 	var para = document.createElement("P");
 	para.innerHTML = "You selected : ";
-	para.appendChild(document.createElement("br"));
+	//para.appendChild(document.createElement("br"));
+	var prodDiv = document.createElement("div");
+	prodDiv.id = "cartItems";
 	for (i = 0; i < ele.length; i++) { 
 		if (ele[i].checked) {
-			para.appendChild(document.createTextNode(ele[i].value));
-			para.appendChild(document.createElement("br"));
+			prodDiv.appendChild(document.createTextNode(ele[i].value));
+			prodDiv.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
 		}
 	}
 		
 	// add paragraph and total price
 	c.appendChild(para);
+	c.appendChild(prodDiv);
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 		
 }

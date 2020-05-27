@@ -34,4 +34,51 @@
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+    background-color: #e2fab6;
   }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #header {
+    margin: 0;
+    background:#5f8c0a;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+  }
+
+  #header h1 {
+    font-family: didot;
+    margin-left: 20px;
+    color: white;
+  }
+
+  #dietInfo {
+    margin-top: 10px;
+  }
+
+  #displayProduct {
+    margin: 10px;
+  }
+
+  #cartItems {
+    margin: 10px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: #5f8c0a;
+    color: white;
+    border-top: 2px solid black;
+    max-width: 200%;
+    font-family: didot;
+}

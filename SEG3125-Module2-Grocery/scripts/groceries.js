@@ -52,6 +52,41 @@ var products = [
         price: 3.00
     },
     {
+        name: "crackers",
+        vegetarian: true,
+        glutenFree: false,
+        organic: true,
+        price: 3.75
+    },
+    {
+        name: "rice",
+        vegetarian: true,
+        glutenFree: true,
+        organic: true,
+        price: 1.60
+    },
+    {
+        name: "chocolate bar",
+        vegetarian: false,
+        glutenFree: false,
+        organic: false,
+        price: 0.99
+    },
+    {
+        name: "chips",
+        vegetarian: true,
+        glutenFree: true,
+        organic: true,
+        price: 5.00
+    },
+    {
+        name: "steak",
+        vegetarian: false,
+        glutenFree: true,
+        organic: false,
+        price: 19.99
+    },
+    {
         name: "salmon",
         vegetarian: false,
         glutenFree: true,
@@ -80,53 +115,53 @@ var products = [
 // prices should be included in this list, as well as a sort based on price
 
 function restrictListProducts(prods, restrictions) {
-    let initialProductList = [];
-    let product_names = [];
+    let initialSelectedProductList = [];
+    let productListToReturn = [];
 
     //adding the items based on the restrictions
     for (i = 0; i < restrictions.length; i++) {
         var restriction = restrictions[i];
 
         for (let x = 0; x < prods.length; x += 1) {
-            if ((restriction == "Vegetarian") && (prods[x].vegetarian == true) && (!product_names.includes(prods[x].name))) {
-                initialProductList.push(prods[x]);
-                product_names.push(prods[x].name);
+            if ((restriction == "Vegetarian") && (prods[x].vegetarian == true) && (!productListToReturn.includes(prods[x]))) {
+                initialSelectedProductList.push(prods[x]);
+                productListToReturn.push(prods[x]);
             }
-            else if ((restriction == "GlutenFree") && (prods[x].glutenFree == true) && (!product_names.includes(prods[x].name))) {
-                initialProductList.push(prods[x]);
-                product_names.push(prods[x].name);
+            else if ((restriction == "GlutenFree") && (prods[x].glutenFree == true) && (!productListToReturn.includes(prods[x]))) {
+                initialSelectedProductList.push(prods[x]);
+                productListToReturn.push(prods[x]);
             }
-            else if ((restriction == "Organic") && (prods[x].organic == true) && (!product_names.includes(prods[x].name))) {
-                initialProductList.push(prods[x]);
-                product_names.push(prods[x].name);
+            else if ((restriction == "Organic") && (prods[x].organic == true) && (!productListToReturn.includes(prods[x]))) {
+                initialSelectedProductList.push(prods[x]);
+                productListToReturn.push(prods[x]);
             }
         }
     }
 
-    //filtering items
+    //further filtering items to avoid inconsistencies (i.e vegetarian and organic being selected but still organic beef still showing up)
     for (i = 0; i < restrictions.length; i++) {
         var restriction = restrictions[i];
 
-        for (x = 0; x < initialProductList.length; x++) {
-            if ((restriction == "Vegetarian") && (initialProductList[x].vegetarian == false) && (product_names.includes(initialProductList[x].name))) {
-                product_names.splice(product_names.indexOf(initialProductList[x].name), 1);
+        for (x = 0; x < initialSelectedProductList.length; x++) {
+            if ((restriction == "Vegetarian") && (initialSelectedProductList[x].vegetarian == false) && (productListToReturn.includes(initialSelectedProductList[x]))) {
+                productListToReturn.splice(productListToReturn.indexOf(initialSelectedProductList[x]), 1);
             }
-            else if ((restriction == "GlutenFree") && (initialProductList[x].glutenFree == false) && (product_names.includes(initialProductList[x].name))) {
-                product_names.splice(product_names.indexOf(initialProductList[x].name), 1);
+            else if ((restriction == "GlutenFree") && (initialSelectedProductList[x].glutenFree == false) && (productListToReturn.includes(initialSelectedProductList[x]))) {
+                productListToReturn.splice(productListToReturn.indexOf(initialSelectedProductList[x]), 1);
             }
-            else if ((restriction == "Organic") && (initialProductList[x].organic == false) && (product_names.includes(initialProductList[x].name))) {
-                product_names.splice(product_names.indexOf(initialProductList[x].name), 1);
+            else if ((restriction == "Organic") && (initialSelectedProductList[x].organic == false) && (productListToReturn.includes(initialSelectedProductList[x]))) {
+                productListToReturn.splice(productListToReturn.indexOf(initialSelectedProductList[x]), 1);
             }
         }
     }
 
     if (restrictions.length == 0) {
         for (i = 0; i < prods.length; i++) {
-            product_names.push(prods[i].name);
+            productListToReturn.push(prods[i]);
         }
 
     }
-    return product_names;
+    return productListToReturn;
 }
 
 // Calculate the total price of items, with received parameter being a list of products

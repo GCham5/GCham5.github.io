@@ -7,11 +7,12 @@
 
 <body onload="initialPopulate()">
 
-<div class="header">
-    <h2>U&I Foods</h2>
+<div id="header">
+    <h1>U&I Foods</h1>
 </div>
 
-<!-- Tab links, each one with an onclick event associated with it -->
+<div id="mainContainer">
+  <!-- Tab links, each one with an onclick event associated with it -->
 <div class="tab">
   <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
   <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
@@ -23,17 +24,13 @@
   <h3>Client Information</h3>
   <p>Tell us a bit about you.</p>
 	Choose a Category:
-	<!-- <select id="dietSelect" name="dietSelect" onchange="populateListProductChoices(this.id, 'displayProduct')">
-	<option value=""></option>
-	<option value="Vegetarian">Vegetarian</option>
-    <option value="GlutenFree">GlutenFree</option>
-    <option value="None">None</option>
-    </select> -->
     <div id="dietInfo">
         <input type="checkbox" name="Vegetarian" value="Vegetarian" onclick="populateListProductChoices('dietInfo', 'displayProduct')">
         <label for="Vegetarian">Vegetarian</label>
+        <br>
         <input type="checkbox" name="GlutenFree" value="GlutenFree"  onclick="populateListProductChoices('dietInfo', 'displayProduct')">
         <label for="GlutenFree">GlutenFree</label>
+        <br>
         <input type="checkbox" name="Organic" value="Organic"  onclick="populateListProductChoices('dietInfo', 'displayProduct')">
         <label for="Organic">Organic</label>
     </div>
@@ -55,6 +52,13 @@
   <p>Here is your cart.</p>
   <div id="displayCart"></div>
 </div>
+</div>
+
+
+
+<footer>
+  <p>Website designed by Georges Chamoun</p>
+</footer>
 
 <script src="scripts/groceries.js"></script>
 <script src="scripts/main.js"></script>
