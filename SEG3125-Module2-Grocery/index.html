@@ -12,15 +12,15 @@
     <h1>U&I Foods</h1>
   </div>
 
-
-  <!-- Tab links, each one with an onclick event associated with it -->
-  <div class="tab">
-    <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
-    <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
-    <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
-  </div>
-
   <div id="mainContainer">
+    <!-- Tab links, each one with an onclick event associated with it -->
+    <div class="tab">
+      <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
+      <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
+      <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div>
+
+
     <!-- Tab content -->
     <div id="Client" class="tabcontent">
       <h3>Client Information</h3>
@@ -58,8 +58,6 @@
       <div id="displayCart"></div>
     </div>
   </div>
-
-
 
   <footer>
     <p>Website designed by Georges Chamoun</p>
