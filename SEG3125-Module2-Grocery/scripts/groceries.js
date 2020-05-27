@@ -74,9 +74,9 @@ var products = [
     },
     {
         name: "chips",
-        vegetarian: true,
-        glutenFree: true,
-        organic: true,
+        vegetarian: false,
+        glutenFree: false,
+        organic: false,
         price: 5.00
     },
     {
