@@ -127,6 +127,8 @@
   }
 
   #displayProduct {
+    display: flex;
+    flex-wrap: wrap;
     margin: 10px;
   }
 
@@ -167,9 +169,41 @@
     cursor: pointer;
   }
 
+  .productCard {
+    margin: 20px;
+    background-color: white;
+    box-shadow: 2px 4px 5px rgba(0,0,0,1);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 200px;
+  }
+
+  .productCard h3 {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: #ddd;
+    margin: 0;
+  }
+
+  .productCard p {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .productCard button {
+    display: block;
+    margin: 10px auto;
+
+  }
+
   button {
     font-size: medium;
     font-weight: bold;
+  }
+
+  img {
+    width: 100%;
   }
 
   footer {

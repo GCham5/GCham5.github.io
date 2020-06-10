@@ -1,6 +1,8 @@
 // This function is called when any of the tab is clicked
 // It is adapted from https://www.w3schools.com/howto/howto_js_tabs.asp
 
+var chosenProducts = [];
+
 function openInfo(evt, tabName) {
 
 	// Get all elements with class="tabcontent" and hide them
@@ -78,23 +80,51 @@ function populateListProductChoices(slct1, slct2, slct3) {
 			
 		var productName = optionArray[i].name;
 		var productPrice = optionArray[i].price;
-		// create the checkbox and add in HTML DOM
-		var checkbox = document.createElement("input");
-		checkbox.type = "checkbox";
-		checkbox.name = "product";
-		checkbox.value = productName;
-		s3.appendChild(checkbox);
-		
-		// create a label for the checkbox, and also add in HTML DOM
-		var label = document.createElement('label')
-		label.htmlFor = productName;
-		label.appendChild(document.createTextNode(productName));
-		s3.appendChild(label);
+		var product = optionArray[i];
 
-		var priceLabel = document.createElement('label');
-		priceLabel.htmlFor = productName;
-		priceLabel.appendChild(document.createTextNode(" - $" + productPrice));
-		s3.appendChild(priceLabel);
+
+		var productCard = document.createElement('div');
+		productCard.className += "productCard";
+
+		var title = document.createElement('h3');
+		title.textContent = productName;
+
+		var image = document.createElement("img");
+		image.src = optionArray[i].image;
+
+		var price = document.createElement('p');
+		price.textContent = productPrice;
+
+		var addBtn = document.createElement('button');
+		addBtn.textContent = "Add to cart";
+
+		// code inspired by StackOverflow
+		addBtn.setAttribute("onclick", selectedItems(product));
+
+
+		s3.appendChild(productCard);
+		productCard.appendChild(title);
+		productCard.appendChild(image);
+		productCard.appendChild(price);
+		productCard.appendChild(addBtn);
+
+
+		// var checkbox = document.createElement("input");
+		// checkbox.type = "checkbox";
+		// checkbox.name = "product";
+		// checkbox.value = productName;
+		// s3.appendChild(checkbox);
+		
+		// // create a label for the checkbox, and also add in HTML DOM
+		// var label = document.createElement('label')
+		// label.htmlFor = productName;
+		// label.appendChild(document.createTextNode(productName));
+		// s3.appendChild(label);
+
+		// var priceLabel = document.createElement('label');
+		// priceLabel.htmlFor = productName;
+		// priceLabel.appendChild(document.createTextNode(" - $" + productPrice));
+		// s3.appendChild(priceLabel);
 		
 		// create a breakline node and add in HTML DOM
 		s3.appendChild(document.createElement("br"));    
@@ -105,48 +135,46 @@ function populateListProductChoices(slct1, slct2, slct3) {
 // The purpose is to build the HTML to be displayed (a Paragraph) 
 // We build a paragraph to contain the list of selected items, and the total price
 
-function selectedItems(){
-	
-	var ele = document.getElementsByName("product");
-	var chosenProducts = [];
-	
-	var c = document.getElementById('displayCart');
-	c.innerHTML = "";
-	
-	// build list of selected item
-	var para = document.createElement("P");
-	para.innerHTML = "You selected : ";
-	//para.appendChild(document.createElement("br"));
-	var prodDiv = document.createElement("div");
-	prodDiv.id = "cartItems";
-	for (i = 0; i < ele.length; i++) { 
-		if (ele[i].checked) {
-			prodDiv.appendChild(document.createTextNode(ele[i].value));
-			prodDiv.appendChild(document.createElement("br"));
-			chosenProducts.push(ele[i].value);
-		}
+function selectedItems(product){
+
+	if(!chosenProducts.includes(product)){
+		chosenProducts.push(product);
 	}
-		
-	// add paragraph and total price
-	c.appendChild(para);
-	c.appendChild(prodDiv);
-	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 		
 }
 
 
 // This function is called when the "Cart" button is clicked
 // It will display the cart in a modal
-
 function openModal() {
+
+	populateCart();
+
 	var cartModal = document.getElementById("cartModal");
 	cartModal.style.display = "block";
 }
 
 // This function is called when the "Cart" close button is clicked
 // It will close the cart modal
-
 function closeModal(){
 	var cartModal = document.getElementById("cartModal");
 	cartModal.style.display = "none";
+}
+
+// This function is called to populate the cart with chosenProducts
+function populateCart() {
+
+	var c = document.getElementById('displayCart');
+	c.innerHTML = "";
+
+	var prodDiv = document.createElement("div");
+	prodDiv.id = "cartItems";
+
+	for(i = 0; i < chosenProducts.length; i++){
+		prodDiv.appendChild(document.createTextNode(chosenProducts[i].name));
+		prodDiv.appendChild(document.createElement("br"));
+	}
+
+	c.appendChild(prodDiv);
+	c.appendChild(document.createTextNode("Total Price is  " + getTotalPrice(chosenProducts)));
 }

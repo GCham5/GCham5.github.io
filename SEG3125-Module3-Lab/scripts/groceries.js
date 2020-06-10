@@ -13,12 +13,13 @@ var CategoryEnum = {
 
 var products = [
     {
-        name: "brocoli",
+        name: "broccoli",
         vegetarian: true,
         glutenFree: true,
         organic: true,
         category: CategoryEnum.VEGETABLES,
-        price: 1.99
+        price: 1.99,
+        image: "images/broccoli.png"
     },
     {
         name: "spinach",
@@ -26,7 +27,8 @@ var products = [
         glutenFree: true,
         organic: true,
         category: CategoryEnum.VEGETABLES,
-        price: 1.30
+        price: 1.30,
+        image: "images/spinach.jpg"
     },
     {
         name: "banana",
@@ -34,7 +36,8 @@ var products = [
         glutenFree: true,
         organic: true,
         category: CategoryEnum.FRUITS,
-        price: 0.99
+        price: 0.99,
+        image: "images/banana.png"
     },
     {
         name: "apple",
@@ -42,7 +45,8 @@ var products = [
         glutenFree: true,
         organic: false,
         category: CategoryEnum.FRUITS,
-        price: 1.10
+        price: 1.10,
+        image: "images/apple.png"
     },
     {
         name: "bread",
@@ -50,7 +54,8 @@ var products = [
         glutenFree: false,
         organic: false,
         category: CategoryEnum.BAKERY,
-        price: 2.35
+        price: 2.35,
+        image:"images/bread.png"
     },
     {
         name: "pretzel",
@@ -58,7 +63,8 @@ var products = [
         glutenFree: false,
         organic: false,
         category: CategoryEnum.BAKERY,
-        price: 3.00
+        price: 3.00,
+        image:"images/pretzel.jpg"
     },
     {
         name: "cookies",
@@ -66,7 +72,8 @@ var products = [
         glutenFree: false,
         organic: false,
         category: CategoryEnum.BAKERY,
-        price: 3.00
+        price: 3.00,
+        image:"images/cookie.png"
     },
     {
         name: "crackers",
@@ -74,7 +81,8 @@ var products = [
         glutenFree: false,
         organic: true,
         category: CategoryEnum.BAKERY,
-        price: 3.75
+        price: 3.75,
+        image:"images/cracker.jpg"
     },
     {
         name: "rice",
@@ -82,15 +90,17 @@ var products = [
         glutenFree: true,
         organic: true,
         category: CategoryEnum.COOKING,
-        price: 1.60
+        price: 1.60,
+        image:"images/rice.png"
     },
     {
         name: "chocolate bar",
         vegetarian: false,
         glutenFree: false,
         organic: false,
-        category: CategoryEnum.VEGETABLES,
-        price: 0.99
+        category: CategoryEnum.BAKERY,
+        price: 0.99,
+        image:"images/chocolate.jpg"
     },
     {
         name: "chips",
@@ -98,7 +108,8 @@ var products = [
         glutenFree: false,
         organic: false,
         category: CategoryEnum.VEGETABLES,
-        price: 5.00
+        price: 5.00,
+        image: "images/chips.png"
     },
     {
         name: "steak",
@@ -106,7 +117,8 @@ var products = [
         glutenFree: true,
         organic: false,
         category: CategoryEnum.MEATS,
-        price: 19.99
+        price: 19.99,
+        image: "images/steak.png"
     },
     {
         name: "salmon",
@@ -114,7 +126,8 @@ var products = [
         glutenFree: true,
         organic: false,
         category: CategoryEnum.MEATS,
-        price: 10.00
+        price: 10.00,
+        image:"images/salmon.png"
     },
     {
         name: "chicken thigh",
@@ -122,7 +135,8 @@ var products = [
         glutenFree: true,
         organic: false,
         category: CategoryEnum.MEATS,
-        price: 7.99
+        price: 7.99,
+        image: "images/chicken.png"
     },
     {
         name: "ground beef",
@@ -130,7 +144,8 @@ var products = [
         glutenFree: true,
         organic: true,
         category: CategoryEnum.MEATS,
-        price: 11.70
+        price: 11.70,
+        image: "images/beef.jpg"
     }
 ];
 
