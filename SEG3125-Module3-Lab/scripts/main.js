@@ -87,19 +87,23 @@ function populateListProductChoices(slct1, slct2, slct3) {
 		productCard.className += "productCard";
 
 		var title = document.createElement('h3');
-		title.textContent = productName;
+		title.appendChild(document.createTextNode(productName));
 
 		var image = document.createElement("img");
 		image.src = optionArray[i].image;
 
 		var price = document.createElement('p');
-		price.textContent = productPrice;
+		price.appendChild(document.createTextNode(" $" + productPrice));
 
 		var addBtn = document.createElement('button');
 		addBtn.textContent = "Add to cart";
 
+		addBtn.value = productName;
+
 		// code inspired by StackOverflow
-		addBtn.setAttribute("onclick", selectedItems(product));
+		addBtn.onclick = function(){
+			selectedItems(this.value);
+		}
 
 
 		s3.appendChild(productCard);
@@ -107,24 +111,6 @@ function populateListProductChoices(slct1, slct2, slct3) {
 		productCard.appendChild(image);
 		productCard.appendChild(price);
 		productCard.appendChild(addBtn);
-
-
-		// var checkbox = document.createElement("input");
-		// checkbox.type = "checkbox";
-		// checkbox.name = "product";
-		// checkbox.value = productName;
-		// s3.appendChild(checkbox);
-		
-		// // create a label for the checkbox, and also add in HTML DOM
-		// var label = document.createElement('label')
-		// label.htmlFor = productName;
-		// label.appendChild(document.createTextNode(productName));
-		// s3.appendChild(label);
-
-		// var priceLabel = document.createElement('label');
-		// priceLabel.htmlFor = productName;
-		// priceLabel.appendChild(document.createTextNode(" - $" + productPrice));
-		// s3.appendChild(priceLabel);
 		
 		// create a breakline node and add in HTML DOM
 		s3.appendChild(document.createElement("br"));    
@@ -135,10 +121,10 @@ function populateListProductChoices(slct1, slct2, slct3) {
 // The purpose is to build the HTML to be displayed (a Paragraph) 
 // We build a paragraph to contain the list of selected items, and the total price
 
-function selectedItems(product){
+function selectedItems(productName){
 
-	if(!chosenProducts.includes(product)){
-		chosenProducts.push(product);
+	if(!chosenProducts.includes(productName)){
+		chosenProducts.push(productName);
 	}
 		
 }
@@ -148,7 +134,13 @@ function selectedItems(product){
 // It will display the cart in a modal
 function openModal() {
 
-	populateCart();
+	if(chosenProducts.length == 0){
+		var c = document.getElementById('displayCart');
+		c.innerHTML = "Cart is item.";
+	}else {
+		populateCart();
+	}
+
 
 	var cartModal = document.getElementById("cartModal");
 	cartModal.style.display = "block";
@@ -171,7 +163,7 @@ function populateCart() {
 	prodDiv.id = "cartItems";
 
 	for(i = 0; i < chosenProducts.length; i++){
-		prodDiv.appendChild(document.createTextNode(chosenProducts[i].name));
+		prodDiv.appendChild(document.createTextNode(chosenProducts[i]));
 		prodDiv.appendChild(document.createElement("br"));
 	}
 
