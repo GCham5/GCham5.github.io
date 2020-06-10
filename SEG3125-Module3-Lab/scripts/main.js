@@ -80,8 +80,6 @@ function populateListProductChoices(slct1, slct2, slct3) {
 			
 		var productName = optionArray[i].name;
 		var productPrice = optionArray[i].price;
-		var product = optionArray[i];
-
 
 		var productCard = document.createElement('div');
 		productCard.className += "productCard";
@@ -100,7 +98,7 @@ function populateListProductChoices(slct1, slct2, slct3) {
 
 		addBtn.value = productName;
 
-		// code inspired by StackOverflow
+		// code inspired by StackOverflow https://stackoverflow.com/questions/6956258/adding-onclick-event-to-dynamically-added-button
 		addBtn.onclick = function(){
 			selectedItems(this.value);
 		}
