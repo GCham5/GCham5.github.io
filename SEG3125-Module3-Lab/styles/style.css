@@ -37,16 +37,16 @@
   }
 
   .sidenav {
-    height: 75%;
+    height: auto;
     width: 175px;
+    margin-right: 10px;
     position: fixed;
-    /* z-index: 1; */
     left: 0;
     background-color: white;
-    /* overflow-x: hidden; */
+    border: 1px solid black;
   }
 
-  .sidenav p, .dropdown-btn{
+  .sidenav p {
     padding-left: 15px;
     text-decoration: none;
     font-size: 20px;
@@ -58,10 +58,26 @@
     outline: none;
   }
 
+  .sideNavSection {
+    margin-bottom: 15px;
+    border-top: 1px solid grey;
+  }
+
+  .sideNavSubSection {
+    margin-left: 20px;
+  }
+  
+  .sideNavHeader {
+    background-color:black;
+  }
+
   #sideNavTitle{
+    margin: 0;
     font-size: 25px;
     padding-bottom: 10px;
+    padding-top: 10px;
     border-bottom: 2px solid black;
+    background-color: #ddd;
     width: auto;
   }
 
@@ -82,19 +98,29 @@
     max-height: 100%;
   }
 
+  #storeContent {
+    margin-left: 200px;
+  }
+
   #header {
-    margin: 0;
-    background:#5f8c0a;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid black;
+    background-color: #5f8c0a;
+    overflow: hidden;
   }
 
   #header h1 {
+    float: left;
     font-family: didot;
     margin-left: 20px;
     color: white;
   }
+
+  #header button {
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
 
   #dietInfo {
     margin-top: 10px;
@@ -106,6 +132,39 @@
 
   #cartItems {
     margin: 10px;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height:100%;
+    overflow: 100%;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .cartContent{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+
+  #close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  #close:hover, #close:focus {
+    color: black;
+    cursor: pointer;
   }
 
   button {

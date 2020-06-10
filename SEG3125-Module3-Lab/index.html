@@ -10,51 +10,82 @@
 
   <div id="header">
     <h1>U&I Foods</h1>
+    <div id="headerRight">
+      <button id="cartBtn" onclick="openModal()">Cart</button>
+    </div>
   </div>
 
   <div id="mainContainer">
     <!-- Tab links, each one with an onclick event associated with it -->
-    <div class="tab">
+    <!-- <div class="tab">
       <button class="tablinks" onclick="openInfo(event, 'Client')">Client</button>
       <button class="tablinks" onclick="openInfo(event, 'Products')">Products</button>
       <button class="tablinks" onclick="openInfo(event, 'Cart')">Cart</button>
+    </div> -->
+
+    <div id="cartModal" class="modal">
+      <div class="cartContent">
+        <span id="close" onclick="closeModal()">&times;</span>
+        <h3>Cart</h3>
+        <p>Here is your cart.</p>
+        <div id="displayCart"></div>
+      </div>
     </div>
 
-    <div class="sidenav">
-      
-      <p id="sideNavTitle">Filter</p>
 
-      <div class="sidenavContent">
+    <div class="sidenav">
+      <p id="sideNavTitle">FILTER BY</p>
+      <div class="sideNavSection">
         <p>Preferences</p>
-        <div class="dropdown-container">
+        <div class="sideNavSubSection" id="dietInfo">
           <input type="checkbox" name="Vegetarian" value="Vegetarian"
-            onclick="populateListProductChoices('dietInfo', 'displayProduct')">
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
           <label for="Vegetarian">Vegetarian</label>
           <br>
           <input type="checkbox" name="GlutenFree" value="GlutenFree"
-            onclick="populateListProductChoices('dietInfo', 'displayProduct')">
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
           <label for="GlutenFree">GlutenFree</label>
           <br>
           <input type="checkbox" name="Organic" value="Organic"
-            onclick="populateListProductChoices('dietInfo', 'displayProduct')">
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
           <label for="Organic">Organic</label>
         </div>
       </div>
 
-      <div class="sidenavContent">
+      <div class="sideNavSection">
         <p>Food Categories</p>
-        <div class="dropdown-container">
-          <input type="checkbox" name="Vegetarian" value="Vegetarian"
-            onclick="populateListProductChoices('dietInfo', 'displayProduct')">
-          <label for="Vegetarian">Vegetarian</label>
+        <div class="sideNavSubSection" id="foodCat">
+          <input type="radio" name="FoodCategory" value="All" checked="checked"
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
+          <label for="FoodCategory">All</label>
           <br>
-          <input type="checkbox" name="GlutenFree" value="GlutenFree"
-            onclick="populateListProductChoices('dietInfo', 'displayProduct')">
-          <label for="GlutenFree">GlutenFree</label>
+          <input type="radio" name="FoodCategory" value="Vegetables"
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
+          <label for="FoodCategory">Vegetables</label>
           <br>
-          <input type="checkbox" name="Organic" value="Organic"
-            onclick="populateListProductChoices('dietInfo', 'displayProduct')">
-          <label for="Organic">Organic</label>
+          <input type="radio" name="FoodCategory" value="Fruits"
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
+          <label for="FoodCategory">Fruits</label>
+          <br>
+          <input type="radio" name="FoodCategory" value="Dairy"
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
+          <label for="FoodCategory">Dairy Products</label>
+          <br>
+          <input type="radio" name="FoodCategory" value="Beverages"
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
+          <label for="FoodCategory">Juice/Beverages</label>
+          <br>
+          <input type="radio" name="FoodCategory" value="Cooking"
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
+          <label for="FoodCategory">Cooking Products</label>
+          <br>
+          <input type="radio" name="FoodCategory" value="Bakery"
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
+          <label for="FoodCategory">Bakery</label>
+          <br>
+          <input type="radio" name="FoodCategory" value="Meats"
+            onclick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')">
+          <label for="FoodCategory">Meats</label>
         </div>
       </div>
 
@@ -62,7 +93,7 @@
 
 
     <!-- Tab content -->
-    <div id="Client" class="tabcontent">
+    <!-- <div id="Client" class="tabcontent">
       <h3>Client Information</h3>
       <p>Tell us a bit about you.</p>
       Choose a Category:
@@ -79,25 +110,21 @@
           onclick="populateListProductChoices('dietInfo', 'displayProduct')">
         <label for="Organic">Organic</label>
       </div>
+    </div> -->
 
-    </div>
-
-    <div id="Products" class="tabcontent">
-      <h3>Your targeted products</h3>
-      <p>We preselected products based on your restrictions.</p>
-      Choose items to buy:
-      <div id="displayProduct"></div>
-      <button id="addCart" type="button" class="block" onclick="selectedItems()">
-        Add selected items to cart.
-      </button>
-    </div>
-
-    <div id="Cart" class="tabcontent">
-      <h3>Cart</h3>
-      <p>Here is your cart.</p>
-      <div id="displayCart"></div>
+    <div id="storeContent">
+      <div id="Products" class="tabcontent" style="display: block;">
+        <h3>Your targeted products</h3>
+        <p>We preselected products based on your preferences.</p>
+        Choose items to buy:
+        <div id="displayProduct"></div>
+        <button id="addCart" type="button" class="block" onclick="selectedItems()">
+          Add selected items to cart.
+        </button>
+      </div>
     </div>
   </div>
+
 
   <footer>
     <p>Website designed by Georges Chamoun</p>

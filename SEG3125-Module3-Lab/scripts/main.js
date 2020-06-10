@@ -22,30 +22,39 @@ function openInfo(evt, tabName) {
 }
     
 function initialPopulate(){
-    populateListProductChoices("dietInfo", "displayProduct");
+    populateListProductChoices("dietInfo", "foodCat", "displayProduct");
 }
 
 // generate a checkbox list from a list of products
 // it makes each product name as the label for the checkbos
 
-function populateListProductChoices(slct1, slct2) {
+function populateListProductChoices(slct1, slct2, slct3) {
     var s1 = document.getElementById(slct1);
-    var s2 = document.getElementById(slct2);
+	var s2 = document.getElementById(slct2);
+	var s3 = document.getElementById(slct3);
 	
-	// s2 represents the <div> in the Products tab, which shows the product list, so we first set it empty
-    s2.innerHTML = "";
+	// s3 represents the <div> in the Products tab, which shows the product list, so we first set it empty
+    s3.innerHTML = "";
 
-    var checkboxes = s1.getElementsByTagName('input');
-    var dietSelectionList = [];
+	var checkboxes = s1.getElementsByTagName('input');
+	var radioBtns = s2.getElementsByTagName('input');
+	var dietSelectionList = [];
+	var foodCategory = '';
 
     for (i = 0; i < checkboxes.length; i++) {
         if(checkboxes[i].checked){
             dietSelectionList.push(checkboxes[i].value);
         }
+	}
+	
+	for (i = 0; i < radioBtns.length; i++) {
+        if(radioBtns[i].checked){
+            foodCategory = radioBtns[i].value;
+        }
     }
 		
 	// obtain a reduced list of products based on restrictions
-	var optionArray = restrictListProducts(products, dietSelectionList);
+	var optionArray = restrictListProducts(products, dietSelectionList, foodCategory);
 	
 	//sorting by price
 	optionArray.sort(function(prod1, prod2) {
@@ -74,21 +83,21 @@ function populateListProductChoices(slct1, slct2) {
 		checkbox.type = "checkbox";
 		checkbox.name = "product";
 		checkbox.value = productName;
-		s2.appendChild(checkbox);
+		s3.appendChild(checkbox);
 		
 		// create a label for the checkbox, and also add in HTML DOM
 		var label = document.createElement('label')
 		label.htmlFor = productName;
 		label.appendChild(document.createTextNode(productName));
-		s2.appendChild(label);
+		s3.appendChild(label);
 
 		var priceLabel = document.createElement('label');
 		priceLabel.htmlFor = productName;
 		priceLabel.appendChild(document.createTextNode(" - $" + productPrice));
-		s2.appendChild(priceLabel);
+		s3.appendChild(priceLabel);
 		
 		// create a breakline node and add in HTML DOM
-		s2.appendChild(document.createElement("br"));    
+		s3.appendChild(document.createElement("br"));    
 	}
 }
 	
@@ -123,4 +132,21 @@ function selectedItems(){
 	c.appendChild(prodDiv);
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 		
+}
+
+
+// This function is called when the "Cart" button is clicked
+// It will display the cart in a modal
+
+function openModal() {
+	var cartModal = document.getElementById("cartModal");
+	cartModal.style.display = "block";
+}
+
+// This function is called when the "Cart" close button is clicked
+// It will close the cart modal
+
+function closeModal(){
+	var cartModal = document.getElementById("cartModal");
+	cartModal.style.display = "none";
 }

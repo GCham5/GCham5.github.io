@@ -1,12 +1,23 @@
 // Array of products, each product is an object with different fieldset
 // A set of ingredients should be added to products		 
 
+var CategoryEnum = {
+    VEGETABLES: "Vegetables",
+    FRUITS: "Fruits",
+    DAIRY: "Dairy",
+    BEVERAGES: "Beverages",
+    COOKING: "Cooking",
+    MEATS: "Meats",
+    BAKERY: "Bakery"
+}
+
 var products = [
     {
         name: "brocoli",
         vegetarian: true,
         glutenFree: true,
         organic: true,
+        category: CategoryEnum.VEGETABLES,
         price: 1.99
     },
     {
@@ -14,6 +25,7 @@ var products = [
         vegetarian: true,
         glutenFree: true,
         organic: true,
+        category: CategoryEnum.VEGETABLES,
         price: 1.30
     },
     {
@@ -21,6 +33,7 @@ var products = [
         vegetarian: true,
         glutenFree: true,
         organic: true,
+        category: CategoryEnum.FRUITS,
         price: 0.99
     },
     {
@@ -28,6 +41,7 @@ var products = [
         vegetarian: true,
         glutenFree: true,
         organic: false,
+        category: CategoryEnum.FRUITS,
         price: 1.10
     },
     {
@@ -35,6 +49,7 @@ var products = [
         vegetarian: true,
         glutenFree: false,
         organic: false,
+        category: CategoryEnum.BAKERY,
         price: 2.35
     },
     {
@@ -42,6 +57,7 @@ var products = [
         vegetarian: true,
         glutenFree: false,
         organic: false,
+        category: CategoryEnum.BAKERY,
         price: 3.00
     },
     {
@@ -49,6 +65,7 @@ var products = [
         vegetarian: false,
         glutenFree: false,
         organic: false,
+        category: CategoryEnum.BAKERY,
         price: 3.00
     },
     {
@@ -56,6 +73,7 @@ var products = [
         vegetarian: true,
         glutenFree: false,
         organic: true,
+        category: CategoryEnum.BAKERY,
         price: 3.75
     },
     {
@@ -63,6 +81,7 @@ var products = [
         vegetarian: true,
         glutenFree: true,
         organic: true,
+        category: CategoryEnum.COOKING,
         price: 1.60
     },
     {
@@ -70,6 +89,7 @@ var products = [
         vegetarian: false,
         glutenFree: false,
         organic: false,
+        category: CategoryEnum.VEGETABLES,
         price: 0.99
     },
     {
@@ -77,6 +97,7 @@ var products = [
         vegetarian: false,
         glutenFree: false,
         organic: false,
+        category: CategoryEnum.VEGETABLES,
         price: 5.00
     },
     {
@@ -84,6 +105,7 @@ var products = [
         vegetarian: false,
         glutenFree: true,
         organic: false,
+        category: CategoryEnum.MEATS,
         price: 19.99
     },
     {
@@ -91,6 +113,7 @@ var products = [
         vegetarian: false,
         glutenFree: true,
         organic: false,
+        category: CategoryEnum.MEATS,
         price: 10.00
     },
     {
@@ -98,6 +121,7 @@ var products = [
         vegetarian: false,
         glutenFree: true,
         organic: false,
+        category: CategoryEnum.MEATS,
         price: 7.99
     },
     {
@@ -105,6 +129,7 @@ var products = [
         vegetarian: false,
         glutenFree: true,
         organic: true,
+        category: CategoryEnum.MEATS,
         price: 11.70
     }
 ];
@@ -114,7 +139,7 @@ var products = [
 // given restrictions provided, make a reduced list of products
 // prices should be included in this list, as well as a sort based on price
 
-function restrictListProducts(prods, restrictions) {
+function restrictListProducts(prods, restrictions, foodCategory) {
     let initialSelectedProductList = [];
     let productListToReturn = [];
 
@@ -159,8 +184,16 @@ function restrictListProducts(prods, restrictions) {
         for (i = 0; i < prods.length; i++) {
             productListToReturn.push(prods[i]);
         }
-
     }
+
+    if ((foodCategory != '' && foodCategory != 'All')){
+        for(i = 0; i < productListToReturn.length; i++){
+            if(productListToReturn[i].category != foodCategory){
+                delete productListToReturn[i];
+            }
+        }
+    }
+
     return productListToReturn;
 }
 
