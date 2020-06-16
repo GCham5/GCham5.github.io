@@ -18,7 +18,9 @@
 
 </head>
 
-<body>
+<!-- Inspired by https://www.w3schools.com/bootstrap4/tryit.asp?filename=trybs_scrollspy&stacked=h -->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
         <a class="navbar-brand" href="#">FreshCutz</a>
@@ -29,16 +31,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Services</a>
+                    <a href="#services" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Barbers</a>
+                    <a href="#barbers" class="nav-link">Barbers</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Get A Cut</a>
+                    <a href="#book" class="nav-link">Get A Cut</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Drop By</a>
+                    <a href="#contact" class="nav-link">Drop By</a>
                 </li>
             </ul>
         </div>
@@ -48,7 +50,59 @@
     <div class="jumbotron jumbotron-fluid">
         <h1 class="display-4">Freshest Cuts in Ottawa</h1>
         <hr class="my-4">
-        <p class="lead">Ranked one of Ottawa's Top 10 Barbershops, we are certain you'll feel fresh after one of our cuts.</p>
+        <p class="lead">Ranked one of Ottawa's Top 10 Barbershops, we are certain you'll feel fresh after one of our
+            cuts.</p>
+    </div>
+
+    <div class="container-fluid" id="services">
+        <h1>Services</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/skin-fade.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fades</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#book" class="btn btn-primary">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/Platinum-Blonde.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dye</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#book" class="btn btn-primary">Book</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/lineup.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Line ups</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#book" class="btn btn-primary">Book</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid" id="barbers">
+        <h1>Barbers</h1>
+    </div>
+    <div class="container-fluid" id="book">
+        <h1>Get a cut</h1>
+    </div>
+    <div class="container-fluid" id="contact">
+        <h1>Drop by</h1>
     </div>
 
     <!-- <div class="container-md p3 my-3 bg-dark text-white">
