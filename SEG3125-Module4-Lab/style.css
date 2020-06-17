@@ -4,6 +4,11 @@
     text-align: center;
 }
 
+.container-fluid {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 .servicesCard {
   margin: 50px;
 }
@@ -22,8 +27,6 @@
 }
 
 #barbers {
-    padding-top: 20px;
-    padding-bottom: 40px;
     background-color: grey;
 }
 
