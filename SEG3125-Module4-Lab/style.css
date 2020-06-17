@@ -1,13 +1,23 @@
-.jumbotron {
-    margin-top: 50px;
-    height: 300px;
+/* Inspired by https://www.w3schools.com/howto/howto_css_hero_image.asp */
+.mainImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/barbershop.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+.mainText {
+    padding-top: 200px;
+    height: 500px;
     text-align: center;
+    color: white;
 }
 
 .container-fluid {
     padding-top: 20px;
     padding-bottom: 40px;
 }
+
 
 .servicesCard {
   margin: 50px;
@@ -27,9 +37,26 @@
 }
 
 #barbers {
-    background-color: grey;
+    background-color: #908a8a;
 }
 
 #barbers h1 {
     color: white;
+}
+
+#contact {
+    background-color: #908a8a;
+}
+
+#contact h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+#contact h4 {
+    color: whitesmoke;
+}
+
+#contact h5 {
+    color: gainsboro
 }
