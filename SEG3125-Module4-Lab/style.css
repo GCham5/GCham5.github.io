@@ -21,6 +21,12 @@
     overflow: hidden;
 }
 
-#services {
-    background-color: aliceblue;
+#barbers {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    background-color: grey;
+}
+
+#barbers h1 {
+    color: white;
 }
