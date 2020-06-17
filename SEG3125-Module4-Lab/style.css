@@ -4,6 +4,22 @@
     text-align: center;
 }
 
-.card {
+.servicesCard {
   margin: 50px;
+}
+
+.barbersCard {
+    margin: 20px;
+}
+
+/* Inspired from https://stackoverflow.com/questions/19414856/how-can-i-make-all-images-of-different-height-and-width-the-same-via-css */
+.barberImg {
+    width: 343px;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#services {
+    background-color: aliceblue;
 }
