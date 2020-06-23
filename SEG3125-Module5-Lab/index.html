@@ -13,6 +13,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="script.js"></script>
 
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -232,17 +240,22 @@
             <form>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <label for="validationDefault01">First name</label>
-                        <input type="text" class="form-control" id="validationDefault01"
+                        <label for="firstName">First name</label>
+                        <input type="text" class="form-control" id="firstName"
                             placeholder="Enter your first name..." required>
                     </div>
                     <div class="col-md-6 mb-3">
-                        <label for="validationDefault02">Last name</label>
-                        <input type="text" class="form-control" id="validationDefault02"
+                        <label for="lastName">Last name</label>
+                        <input type="text" class="form-control" id="lastName"
                             placeholder="Enter your last name..." required>
                     </div>
                 </div>
                 <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label for="telephoneNumber">Telephone number</label>
+                        <input type="text" class="form-control" id="telephoneNumber"
+                            placeholder="xxx-xxx-xxxx" required>
+                    </div>
                     <div class="col-md-6 mb-3">
                         <label for="validationDefault03">Service</label>
                         <br>
@@ -259,7 +272,9 @@
                             <label class="form-check-label" for="inlineCheckbox3">Line up - $18</label>
                         </div>
                     </div>
-                    <div class="col-md-3 mb-3">
+                </div> 
+                <div class="form-row">
+                    <div class="col-md-6 mb-6">
                         <label for="validationDefault04">Barber</label>
                         <select class="custom-select" id="validationDefault04" required>
                             <option selected disabled value="">Pick a barber...</option>
@@ -268,9 +283,14 @@
                             <option>Romeo</option>
                         </select>
                     </div>
-                    <div class="col-md-3 mb-3">
+                    <div class="col-md-6 mb-6">
                         <label for="validationDefault05">Date</label>
-                        <input type="datetime-local" class="form-control" id="validationDefault05" required>
+                        <input type="text" class="form-control" id="dateInput" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        
                     </div>
                 </div>
                 <div class="form-row">
