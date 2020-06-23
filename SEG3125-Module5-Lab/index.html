@@ -16,7 +16,8 @@
     <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
     <!-- which is built on top of JQuery and offers additional possibilities -->
     <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
-    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css">
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/base/jquery-ui.css" rel="stylesheet"
+        type="text/css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
@@ -241,60 +242,66 @@
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">First name</label>
-                        <input type="text" class="form-control" id="firstName"
-                            placeholder="Enter your first name..." required>
+                        <input type="text" class="form-control" id="firstName" placeholder="Enter your first name..."
+                            required>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Last name</label>
-                        <input type="text" class="form-control" id="lastName"
-                            placeholder="Enter your last name..." required>
+                        <input type="text" class="form-control" id="lastName" placeholder="Enter your last name..."
+                            required>
                     </div>
                 </div>
+                <br>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
                         <label for="telephoneNumber">Telephone number</label>
-                        <input type="text" class="form-control" id="telephoneNumber"
-                            placeholder="xxx-xxx-xxxx" required>
+                        <input type="text" class="form-control" id="telephoneNumber" placeholder="xxx-xxx-xxxx"
+                            required>
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="validationDefault03">Service</label>
                         <br>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Fade - $25</label>
+                            <input class="form-check-input" type="checkbox" id="fade" value="option1">
+                            <label class="form-check-label" for="fade">Fade - $25</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                            <label class="form-check-label" for="inlineCheckbox2">Dye - $50</label>
+                            <input class="form-check-input" type="checkbox" id="dye" value="option2">
+                            <label class="form-check-label" for="dye">Dye - $50</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                            <label class="form-check-label" for="inlineCheckbox3">Line up - $18</label>
+                            <input class="form-check-input" type="checkbox" id="lineUp" value="option3">
+                            <label class="form-check-label" for="lineUp">Line up - $18</label>
                         </div>
                     </div>
-                </div> 
+                </div>
+                <br>
                 <div class="form-row">
                     <div class="col-md-6 mb-6">
-                        <label for="validationDefault04">Barber</label>
-                        <select class="custom-select" id="validationDefault04" required>
-                            <option selected disabled value="">Pick a barber...</option>
-                            <option>Jack</option>
-                            <option>Alex</option>
-                            <option>Romeo</option>
+                        <label for="barbersSelect">Barber</label>
+                        <select class="custom-select" id="barbersSelect" required>
+                            <option selected disabled value="test">Pick a barber...</option>
+                            <option value="Jack">Jack - (Mon-Thurs)</option>
+                            <option value="Alex">Alex - (Tues-Fri)</option>
+                            <option value="Romeo">Romeo - (Mon, Thurs, Fri)</option>
                         </select>
                     </div>
                     <div class="col-md-6 mb-6">
-                        <label for="validationDefault05">Date</label>
+                        <label for="dateInput">Date</label>
                         <input type="text" class="form-control" id="dateInput" required>
                     </div>
                 </div>
+                <br>
                 <div class="form-row">
-                    <div class="col">
-                        
+                    <div class="col-md-6 mb-3">
+                        <label for="creditCard">Credit Card</label>
+                        <input type="text" class="form-control" id="creditCard" placeholder="xxxx-xxxx-xxxx-xxxx"
+                            required>
                     </div>
                 </div>
+                <br>
                 <div class="form-row">
-                    <div class="col">
+                    <div class="col-md-6 mb-3">
                         <div class="form-group">
                             <label for="exampleFormControlTextarea1">Comments? Requests? Let us know.</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
