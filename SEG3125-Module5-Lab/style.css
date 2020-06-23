@@ -49,6 +49,11 @@ body {
     color: white;
 }
 
+/* Inpsired by https://stackoverflow.com/questions/15643037/how-do-i-change-the-hover-over-color-for-a-hover-over-table-in-bootstrap */
+#book input:hover {
+    background-color: rgba(162, 186, 200,0.3);
+}
+
 #contact {
     background-color: #908a8a;
 }
