@@ -43,6 +43,10 @@ const setDateFormat = "mm/dd/yy";
 function disableDates(date) {
     var barberChosen = document.getElementById("barbersSelect").value;
 
+    if(date.getDay() == 0 || date.getDay() == 6){
+        return [false];
+    }
+
     if(barberChosen == 'Jack'){
         if(unavailableDatesJack.includes(date.getDay())){
             return [false];
