@@ -275,17 +275,19 @@
                     <div class="col-md-6 mb-3">
                         <label for="validationDefault03">Service</label>
                         <br>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="fade" value="option1">
-                            <label class="form-check-label" for="fade">Fade - $25</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="dye" value="option2">
-                            <label class="form-check-label" for="dye">Dye - $50</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="lineUp" value="option3">
-                            <label class="form-check-label" for="lineUp">Line up - $18</label>
+                        <div id="servicesCheckboxes">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="fade" value="option1">
+                                <label class="form-check-label" for="fade">Fade - $25</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="dye" value="option2">
+                                <label class="form-check-label" for="dye">Dye - $50</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="lineUp" value="option3">
+                                <label class="form-check-label" for="lineUp">Line up - $18</label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -299,6 +301,9 @@
                             <option value="Alex">Alex - (Tues-Fri)</option>
                             <option value="Romeo">Romeo - (Mon, Thurs, Fri)</option>
                         </select>
+                        <small id="creditCardHelp" class="form-text text-muted">
+                            If you don't select a barber, you'll be treated by whoever is free that day
+                        </small>
                     </div>
                     <div class="col-md-6 mb-6">
                         <label for="dateInput">Date</label>

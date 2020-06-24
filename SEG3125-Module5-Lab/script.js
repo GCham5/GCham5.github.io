@@ -110,4 +110,22 @@ $(document).ready(function () {
     );
 
 
+    // Make sure everything is filled out
+    $("#submitBtn").click(function(){
+        var checkboxesDiv = document.getElementById("servicesCheckboxes");
+        var checkboxes = checkboxesDiv.getElementsByTagName('input');
+        var hasSelectedAService = false;
+
+        for (i = 0; i < checkboxes.length; i++) {
+            if(checkboxes[i].checked){
+               hasSelectedAService = true;
+            }
+        }
+
+        if(!hasSelectedAService){
+            alert("Please select at least one service");
+        }
+    })
+
+
 });
