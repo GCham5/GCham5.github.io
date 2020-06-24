@@ -23,6 +23,9 @@ body {
     padding-bottom: 40px;
 }
 
+.container-fluid h1, .container-fluid img{
+    display: inline;
+}
 
 .servicesCard {
   margin: 50px;
