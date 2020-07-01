@@ -1,1 +1,22 @@
-[{"question5c":"VeryUnsatisfied","count":5},{"question5c":"Unsatisfied","count":1},{"question5c":"VerySatisfied","count":1},{"question5c":"Satisfied","count":1}]
+[
+    {
+        "question5c": "VeryUnsatisfied",
+        "count": 5
+    },
+    {
+        "question5c": "Unsatisfied",
+        "count": 1
+    },
+    {
+        "question5c": "Neutral",
+        "count": 1
+    },
+    {
+        "question5c": "Satisfied",
+        "count": 2
+    },
+    {
+        "question5c": "VerySatisfied",
+        "count": 2
+    }
+]

@@ -1,14 +1,1 @@
-[
-    {
-        "question5a": "VeryUnsatisfied",
-        "count": 6
-    },
-    {
-        "question5a": "Unsatisfied",
-        "count": 1
-    },
-    {
-        "question5a": "Satisfied",
-        "count": 1
-    }
-]
+[{"question5a":"VeryUnsatisfied","count":6},{"question5a":"Unsatisfied","count":1},{"question5a":"Satisfied","count":2},{"question5a":"VerySatisfied","count":1}]

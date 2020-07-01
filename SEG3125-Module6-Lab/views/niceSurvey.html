@@ -31,12 +31,35 @@
         </div>
 
         <form>
-            <div class="question">
-                <p class="qTitle">What are your thoughts on IGN's infinite vertical scroll?</p>
-                <input type="text" name="question1" class="text" placeholder="Enter here...">
+            <div class="form-group question">
+                <label for="qTitle">What are your thoughts on IGN's infinite vertical scroll?</label>
+                <textarea class="form-control" name="question1" rows="3" placeholder="Enter here..."></textarea>
             </div>
 
+            <!-- <div class="question">
+                <p class="qTitle">What are your thoughts on IGN's infinite vertical scroll?</p>
+                <input type="text" name="question1" class="text" placeholder="Enter here...">
+            </div> -->
+
             <div class="question">
+                <p class="qTitle">Do you wish IGN had a carousel for main atricles instead of the column-like style
+                    shown above?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" id="yes" value="yes" checked>
+                    <label class="form-check-label" for="yes">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="question2" id="no" value="no" checked>
+                    <label class="form-check-label" for="no">
+                        No
+                    </label>
+                </div>
+            </div>
+
+
+            <!-- <div class="question">
                 <p class="qTitle">Do you wish IGN had a carousel for main atricles instead of the column-like style
                     shown above?</p>
                 <div class="qChoice">
@@ -47,21 +70,59 @@
                     <input type="radio" id="no" name="question2" value="no">
                     <label for="no">No</label>
                 </div>
-            </div>
+            </div> -->
 
             <div class="question">
-                <p class="qTitle">Do you wish IGN displayed a greater, lesser or the same amount articles on the screen?
+
+                <div class="form-group">
+                    <label for="question3">Example select</label>
+                    <select class="form-control" id="question3" name="question3">
+                        <option value="less">Lesser</option>
+                        <option value="same">Same</option>
+                        <option value="more">Greater</option>
+                        <option value="other">Don't Know</option>
+                    </select>
+                </div>
+
+                <!-- <p class="qTitle">Do you wish IGN displayed a greater, lesser or the same amount articles on the screen?
                 </p>
                 <select name="question3">
                     <option value="less">Lesser</option>
                     <option value="same">Same</option>
                     <option value="more">Greater</option>
                     <option value="other">Don't Know</option>
-                </select>
+                </select> -->
             </div>
 
             <div class="question">
                 <p class="qTitle">What features/aspects of IGN's website do you enjoy? (Select all that apply)</p>
+                <div class="form-check">
+                    <input class="form-check-input" name="question4" type="checkbox" value="font" id="font">
+                    <label class="form-check-label" for="font">
+                        Font
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="question4" type="checkbox" value="navbar" id="navbar">
+                    <label class="form-check-label" for="navbar">
+                        Navbar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="question4" type="checkbox" value="signin" id="signin">
+                    <label class="form-check-label" for="signin">
+                        SignIn
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="question4" type="checkbox" value="commentSection"
+                        id="commentSection">
+                    <label class="form-check-label" for="commentSection">
+                        Comment Section
+                    </label>
+                </div>
+
+                <!-- <p class="qTitle">What features/aspects of IGN's website do you enjoy? (Select all that apply)</p>
                 <div class="qChoice">
                     <input type="checkbox" id="font" name="question4" value="font">
                     <label for="font">Font type</label>
@@ -77,7 +138,7 @@
                 <div class="qChoice">
                     <input type="checkbox" id="commentSection" name="question4" value="commentSection">
                     <label for="commentSection">Comment Section</label>
-                </div>
+                </div> -->
             </div>
 
             <div class="question">
@@ -151,13 +212,24 @@
                 </table>
             </div>
 
-            <div class="question">
-                <p class="qTitle">Comments</p>
-                <input type="text" name="question6" class="text" placeholder="Enter comments here...">
+            <div class="form-group question">
+                <label for="qTitle">Comments</label>
+                <textarea class="form-control" name="question6" rows="3"
+                    placeholder="Enter comments here..."></textarea>
             </div>
 
-            <input type="submit" value="Submit" id="submit">
+            <!-- <div class="question">
+                <p class="qTitle">Comments</p>
+                <input type="text" name="question6" class="text" placeholder="Enter comments here...">
+            </div> -->
+
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary mb-2" value="Submit" id="submit">Submit</button>
+            </div>
             <p id="thanks"></p>
+            
+            <!-- <input type="submit" value="Submit" id="submit"> -->
+            
 
         </form>
     </div>

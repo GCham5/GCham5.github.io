@@ -23,7 +23,7 @@ footer {
     margin-top: 50px;
     padding-bottom: 20px;
     padding-left: 20px;
-    background: red;
+    background: #00BFFF;
     color: white;
     border-top: 2px solid black;
     max-width: 200%;
@@ -31,7 +31,7 @@ footer {
 }
 
 #header {
-    background: red;
+    background: #00BFFF;
     padding-top: 10px;
     padding-bottom: 10px;
     border-bottom: 2px solid black;
@@ -51,7 +51,7 @@ footer {
     border-radius: 5px;
     width: 100px;
     padding: 10px;
-    background-color: azure;
+    /* background-color: azure; */
     font-weight: bolder;
     font-size: 15px;
 }
@@ -65,7 +65,7 @@ footer {
     padding: 10px;
     padding-bottom: 20px;
     margin-bottom: 10px;
-    background-color: antiquewhite;
+    background-color: #F0F8FF;
 }
 
 .topic {
