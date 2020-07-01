@@ -11,7 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -26,25 +26,25 @@
             <br>
             <p>This survey will evaluate the UI design of <a href="http://www.ign.com">IGN</a></p>
             <a href="http://www.ign.com">
-                <img src="image.png" alt="IGN Website">
+                <img src="assets/image.png" alt="IGN Website">
             </a>
         </div>
 
-        <form name="survey">
+        <form>
             <div class="question">
                 <p class="qTitle">What are your thoughts on IGN's infinite vertical scroll?</p>
-                <input type="text" class="text" placeholder="Enter here...">
+                <input type="text" name="question1" class="text" placeholder="Enter here...">
             </div>
 
             <div class="question">
                 <p class="qTitle">Do you wish IGN had a carousel for main atricles instead of the column-like style
                     shown above?</p>
                 <div class="qChoice">
-                    <input type="radio" id="yes" name="yorno" value="yes">
+                    <input type="radio" id="yes" name="question2" value="yes">
                     <label for="yes">Yes</label>
                 </div>
                 <div class="qChoice">
-                    <input type="radio" id="no" name="yorno" value="no">
+                    <input type="radio" id="no" name="question2" value="no">
                     <label for="no">No</label>
                 </div>
             </div>
@@ -52,7 +52,7 @@
             <div class="question">
                 <p class="qTitle">Do you wish IGN displayed a greater, lesser or the same amount articles on the screen?
                 </p>
-                <select name="articleNumber">
+                <select name="question3">
                     <option value="less">Lesser</option>
                     <option value="same">Same</option>
                     <option value="more">Greater</option>
@@ -63,19 +63,19 @@
             <div class="question">
                 <p class="qTitle">What features/aspects of IGN's website do you enjoy? (Select all that apply)</p>
                 <div class="qChoice">
-                    <input type="checkbox" id="font" name="font" value="font">
+                    <input type="checkbox" id="font" name="question4" value="font">
                     <label for="font">Font type</label>
                 </div>
                 <div class="qChoice">
-                    <input type="checkbox" id="navbar" name="navbar" value="navbar">
+                    <input type="checkbox" id="navbar" name="question4" value="navbar">
                     <label for="navbar">Navbar</label>
                 </div>
                 <div class="qChoice">
-                    <input type="checkbox" id="signin" name="signin" value="signin">
+                    <input type="checkbox" id="signin" name="question4" value="signin">
                     <label for="signin">SignIn Pop-Up</label>
                 </div>
                 <div class="qChoice">
-                    <input type="checkbox" id="commentSection" name="commentSection" value="commentSection">
+                    <input type="checkbox" id="commentSection" name="question4" value="commentSection">
                     <label for="commentSection">Comment Section</label>
                 </div>
             </div>
@@ -95,57 +95,57 @@
                     <tr>
                         <td class="topic">Placement of Ads</td>
                         <td>
-                            <input type="radio" name="ad" value="vus">
+                            <input type="radio" name="question5a" value="VeryUnsatisfied">
                         </td>
                         <td>
-                            <input type="radio" name="ad" value="vs">
+                            <input type="radio" name="question5a" value="Unsatisfied">
                         </td>
                         <td>
-                            <input type="radio" name="ad" value="n">
+                            <input type="radio" name="question5a" value="Neutral">
                         </td>
                         <td>
-                            <input type="radio" name="ad" value="s">
+                            <input type="radio" name="question5a" value="Satisfied">
                         </td>
                         <td>
-                            <input type="radio" name="ad" value="vs">
+                            <input type="radio" name="question5a" value="VerySatisfied">
                         </td>
                     </tr>
 
                     <tr>
                         <td class="topic">Overall layout of website</td>
                         <td>
-                            <input type="radio" name="layout" value="vus">
+                            <input type="radio" name="question5b" value="VeryUnsatisfied">
                         </td>
                         <td>
-                            <input type="radio" name="layout" value="vs">
+                            <input type="radio" name="question5b" value="Unsatisfied">
                         </td>
                         <td>
-                            <input type="radio" name="layout" value="n">
+                            <input type="radio" name="question5b" value="Neutral">
                         </td>
                         <td>
-                            <input type="radio" name="layout" value="s">
+                            <input type="radio" name="question5b" value="Satisfied">
                         </td>
                         <td>
-                            <input type="radio" name="layout" value="vs">
+                            <input type="radio" name="question5b" value="VerySatisfied">
                         </td>
                     </tr>
 
                     <tr>
                         <td class="topic">Overall performance/speed</td>
                         <td>
-                            <input type="radio" name="performance" value="vus">
+                            <input type="radio" name="question5c" value="VeryUnsatisfied">
                         </td>
                         <td>
-                            <input type="radio" name="performance" value="vs">
+                            <input type="radio" name="question5c" value="Unsatisfied">
                         </td>
                         <td>
-                            <input type="radio" name="performance" value="n">
+                            <input type="radio" name="question5c" value="Neutral">
                         </td>
                         <td>
-                            <input type="radio" name="performance" value="s">
+                            <input type="radio" name="question5c" value="Satisfied">
                         </td>
                         <td>
-                            <input type="radio" name="performance" value="vs">
+                            <input type="radio" name="question5c" value="VerySatisfied">
                         </td>
                     </tr>
                 </table>
@@ -153,13 +153,16 @@
 
             <div class="question">
                 <p class="qTitle">Comments</p>
-                <input type="text" class="text" placeholder="Enter comments here...">
+                <input type="text" name="question6" class="text" placeholder="Enter comments here...">
             </div>
 
             <input type="submit" value="Submit" id="submit">
+            <p id="thanks"></p>
 
         </form>
     </div>
+
+    <script src="/assets/action.js"></script>
 
     <footer>
         <p>Website designed by Georges Chamoun</p>

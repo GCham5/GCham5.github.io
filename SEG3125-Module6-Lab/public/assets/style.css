@@ -1,0 +1,85 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+footer {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background: red;
+    color: white;
+    border-top: 2px solid black;
+    max-width: 200%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#header {
+    background: red;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+#mainContainer {
+    margin: auto;
+    max-width: 80%;
+}
+
+#topSection {
+    margin-bottom: 35px;
+}
+
+#submit {
+    border: 2px solid grey;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    background-color: azure;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.text {
+    width: 99%;
+}
+
+.question {
+    border: 1px solid black;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    background-color: antiquewhite;
+}
+
+.topic {
+    text-align: left;
+}
+
+.qTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid black;
+}
+
+.qChoice {
+    width: 150px;
+    padding: 5px;
+    margin: 2px;
+}

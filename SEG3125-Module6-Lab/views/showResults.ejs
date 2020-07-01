@@ -6,22 +6,53 @@
 
 <body>
     <h1>Survey analysis</h1>
-    <h2>Colors</h2>
+    <h2>Question 1: What are your thoughts on IGN's infinite vertical scroll?</h2>
     <ul>
         <% for (var i=0; i<results[0].length; i++){ %>
-        <li><%= results[0][i].color %> : <%= results[0][i].count %></li>
+        <li><%= results[0][i].question1 %> : <%= results[0][i].count %></li>
         <% } %>
     </ul>
-    <h2>Fruits</h2>
+    <h2>Question 2: Do you wish IGN had a carousel for main atricles instead of the column-like style shown above?</h2>
     <ul>
         <% for (var i=0; i<results[1].length; i++){ %>
-        <li><%= results[1][i].fruit %> : <%= results[1][i].count %></li>
+        <li><%= results[1][i].question2 %> : <%= results[1][i].count %></li>
         <% } %>
     </ul>
-    <h2>Animals</h2>
+    <h2>Question 3: Do you wish IGN displayed a greater, lesser or the same amount articles on the screen?</h2>
     <ul>
         <% for (var i=0; i<results[2].length; i++){ %>
-        <li><%= results[2][i].animal %> : <%= results[2][i].count %></li>
+        <li><%= results[2][i].question3 %> : <%= results[2][i].count %></li>
+        <% } %>
+    </ul>
+    <h2>Question 4: What features/aspects of IGN's website do you enjoy? (Select all that apply)</h2>
+    <ul>
+        <% for (var i=0; i<results[3].length; i++){ %>
+        <li><%= results[3][i].question4 %> : <%= results[3][i].count %></li>
+        <% } %>
+    </ul>
+    <h2>Question 5: How satisfied are you with the following?</h2>
+    <h3>Placement of Ads</h3>
+    <ul>
+        <% for (var i=0; i<results[4].length; i++){ %>
+        <li><%= results[4][i].question5a %> : <%= results[4][i].count %></li>
+        <% } %>
+    </ul>
+    <h3>Overall layout of website</h3>
+    <ul>
+        <% for (var i=0; i<results[5].length; i++){ %>
+        <li><%= results[5][i].question5b %> : <%= results[5][i].count %></li>
+        <% } %>
+    </ul>
+    <h3>Overall performance/speed</h3>
+    <ul>
+        <% for (var i=0; i<results[6].length; i++){ %>
+        <li><%= results[6][i].question5c %> : <%= results[6][i].count %></li>
+        <% } %>
+    </ul>
+    <h2>Question 6: Comments</h2>
+    <ul>
+        <% for (var i=0; i<results[2].length; i++){ %>
+        <li><%= results[7][i].question6 %> : <%= results[2][i].count %></li>
         <% } %>
     </ul>
 </body>
