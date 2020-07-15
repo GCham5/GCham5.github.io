@@ -9,11 +9,12 @@
 }
 
 .servicesCard {
-    margin: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .subSection {
-    min-height: 450px;
+    min-height: 500px;
     display: flex;
     align-items: center;
 }
