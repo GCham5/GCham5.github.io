@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import CreativeCards from './CreativeCards';
 
+
 class Creatives extends Component {
 
     state = {
         creatives: [
-            { name: 'Georges', genre: 'RnB', key: '0' },
-            { name: 'Mark', genre: 'Hip-Hop', key: '1' },
-            { name: 'John', genre: 'Trap', key: '2' }
+            { name: 'MounVibe', type: 'Producer', 'Rating': 4, genre: 'RnB', id: '0' },
+            { name: 'Kanye', type: 'Producer', 'Rating': 5, genre: 'Hip-Hop', id: '1' },
+            { name: 'Illangelo', type: 'Producer', 'Rating': 4.5, genre: 'RnB', id: '2' },
+            { name: 'Metro', type: 'Producer', 'Rating': 4.8, genre: 'Trap', id: '3' },
+            { name: '40', type: 'Producer', 'Rating': 4.7, genre: 'RnB', id: '4' },
         ]
     }
 
