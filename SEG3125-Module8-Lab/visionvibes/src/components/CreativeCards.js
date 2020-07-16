@@ -2,7 +2,7 @@ import React from 'react';
 import pic from '../images/silhouette.png'
 import '../css/Creative.css'
 
-const CreativeCards = ({creatives}) => {
+const CreativeCards = ({creatives, showProfile}) => {
     const creativeList = creatives.map(creative => {
         return (
             <div className='card creative' key={creative.id}>
@@ -11,7 +11,7 @@ const CreativeCards = ({creatives}) => {
                     <h5 className="card-title">{creative.name}</h5>
                     <p className="card-text">{creative.genre}</p>
                     <br/>
-                    <button>View</button>
+                    <button onClick={() => {showProfile(creative.id)}}>View</button>
                 </div>
             </div>
         )

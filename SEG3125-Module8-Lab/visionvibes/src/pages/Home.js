@@ -11,8 +11,6 @@ const Home = () => {
     return (
         <div className="Home container-fluid">
             <Landing />
-            {/* <Services />
-            <Creatives /> */}
             <TodaysBeats/>
             <TodaysCreatives/>
         </div>
