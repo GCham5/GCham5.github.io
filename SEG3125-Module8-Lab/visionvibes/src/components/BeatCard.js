@@ -7,7 +7,7 @@ const BeatCard = ({beats}) => {
         return (
             <div className="card beat" key={beat.id}>
                 <div className="card-body">
-                    <img className="beatPic" src={pic}></img>
+                    <img className="beatPic img-fluid" src={pic}></img>
                     <h4 className="card-title">{beat.title}</h4>
                     <h6 className="card-title">{beat.by}</h6>
                     <p className="card-text">{beat.genre}</p>

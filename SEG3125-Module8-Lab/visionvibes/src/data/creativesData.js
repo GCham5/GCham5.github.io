@@ -1,42 +1,82 @@
-export let creativesData = {
+// export let creativesData = {
 
-    "MounVibe" : 
+//     "MounVibe" : 
+//     {
+//         "Id": 0,
+//         "Type": "Producer",
+//         "Rating": "4",
+//         "Genre": "RnB",
+
+//     },
+//     "Kanye" : 
+//     {
+//         "Id": 1,
+//         "Type": "Producer",
+//         "Rating": "5",
+//         "Genre": "Hip-Hop",
+
+//     },
+//     "Illangelo" : 
+//     {
+//         "Id": 2,
+//         "Type": "Producer",
+//         "Rating": "4.5",
+//         "Genre": "RnB",
+
+//     },
+//     "Metro" : 
+//     {
+//         "Id": 3,
+//         "Type": "Producer",
+//         "Rating": "4.8",
+//         "Genre": "Trap, RnB",
+
+//     },
+//     "40" : 
+//     {
+//         "Id": 4,
+//         "Type": "Producer",
+//         "Rating": "4.7",
+//         "Genre": "RnB",
+//     }
+// }
+
+let creativesData = [
     {
-        "Id": 0,
-        "Type": "Producer",
-        "Rating": "4",
-        "Genre": "RnB",
-
+        'name':'MounVibe',
+        'type':'Publiser',
+        'rating': 4,
+        'genre': 'RnB',
+        id: 0
     },
-    "Kanye" : 
     {
-        "Id": 1,
-        "Type": "Producer",
-        "Rating": "5",
-        "Genre": "Hip-Hop",
-
+        'name':'Kanye',
+        'type':'Publiser',
+        'rating': 5,
+        'genre': 'Hip-Hop',
+        id: 1
     },
-    "Illangelo" : 
     {
-        "Id": 2,
-        "Type": "Producer",
-        "Rating": "4.5",
-        "Genre": "RnB",
-
+        'name':'Illangelo',
+        'type':'Publiser',
+        'rating': 4.5,
+        'genre': 'RnB',
+        id: 2
     },
-    "Metro" : 
     {
-        "Id": 3,
-        "Type": "Producer",
-        "Rating": "4.8",
-        "Genre": "Trap, RnB",
-
+        'name':'Metro',
+        'type':'Publiser',
+        'rating': 4.8,
+        'genre': 'Trap',
+        id: 3
     },
-    "40" : 
     {
-        "Id": 4,
-        "Type": "Producer",
-        "Rating": "4.7",
-        "Genre": "RnB",
+        'name':'40',
+        'type':'Publiser',
+        'rating': 4.7,
+        'genre': 'RnB',
+        id: 4
     }
-}
+]
+
+export default creativesData
