@@ -12,7 +12,7 @@ class TodaysCreatives extends Component {
         return (
             <div className="container-fluid">
                 <h1>Today's Creatives</h1>
-                <div className="container ">
+                <div className="container subSection">
                     <CreativeCards creatives={reducedCreatives} />
                 </div>
             </div>

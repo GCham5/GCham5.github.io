@@ -1,0 +1,10 @@
+.creative {
+    border: 0.1px solid black;
+    max-width: 200px;
+    margin: 10px;
+}
+
+.creatives {
+    display: flex;
+    flex-wrap: wrap;
+}

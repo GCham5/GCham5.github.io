@@ -20,7 +20,7 @@ const BeatCard = ({beats}) => {
     <p>No beats found :(... Try changing your preferences!</p>
 
     return(
-        <div className="card-group beatGroup">
+        <div className="d-flex justify-content-around beats ">
             {beatsList}
         </div>
     )

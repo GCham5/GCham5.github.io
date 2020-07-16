@@ -5,7 +5,7 @@ import '../css/Creative.css'
 const CreativeCards = ({creatives}) => {
     const creativeList = creatives.map(creative => {
         return (
-            <div className='card creativeCard' key={creative.id}>
+            <div className='card creative' key={creative.id}>
                 <div className="card-body">
                     <img className="img-fluid" src={pic}></img>
                     <h5 className="card-title">{creative.name}</h5>
@@ -18,7 +18,7 @@ const CreativeCards = ({creatives}) => {
     })
 
     return(
-        <div className="card-group subSection">
+        <div className="d-flex justify-content-around creatives">
             {creativeList}
         </div>
         

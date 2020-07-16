@@ -10,7 +10,7 @@ class TodaysBeats extends Component {
     render() {
         const reducedBeats = beatsData.slice(0,4)
         return (
-            <div className="container-fluid ">
+            <div className=" container-fluid ">
                 <h1>Today's Beats</h1>
                 <div className="container ">
                     <div className="row subSection">
