@@ -11,7 +11,7 @@ const CreativeCards = ({creatives, showProfile}) => {
                     <h5 className="card-title">{creative.name}</h5>
                     <p className="card-text">{creative.genre}</p>
                     <br/>
-                    <button onClick={() => {showProfile(creative.id)}}>View</button>
+                    <button onClick={() => {showProfile(creative)}}>View</button>
                 </div>
             </div>
         )

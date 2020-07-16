@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
 import CreativeCards from '../components/CreativeCards';
-import creativeData from '../data/creativesData'
+import creativeData from '../data/creativesData';
+import { withRouter } from "react-router-dom";
 
 class TodaysCreatives extends Component {
     state = {
         creatives: creativeData
+    }
+
+    showProfile = (creative) => {
+        this.props.history.push('/creatives')
     }
 
     render() {
@@ -13,11 +18,11 @@ class TodaysCreatives extends Component {
             <div className="container-fluid">
                 <h1>Today's Creatives</h1>
                 <div className="container subSection">
-                    <CreativeCards creatives={reducedCreatives} />
+                    <CreativeCards creatives={reducedCreatives} showProfile={this.showProfile} />
                 </div>
             </div>
         )
     }
 }
 
-export default TodaysCreatives
+export default withRouter(TodaysCreatives)
