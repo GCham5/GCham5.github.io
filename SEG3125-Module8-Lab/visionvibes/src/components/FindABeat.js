@@ -10,19 +10,19 @@ const FindABeat = ({updateBeatList}) => {
                 <div className="sideNavSubSection" id="genreInfo">
                     <input type="checkbox" name="RnB" value="RnB"
                         onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
-                    <label for="RnB">RnB</label>
+                    <label htmlFor="RnB">RnB</label>
                     <br />
                     <input type="checkbox" name="Hip-Hop" value="Hip-Hop"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="Hip-Hop">Hip-Hop</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="Hip-Hop">Hip-Hop</label>
                     <br />
                     <input type="checkbox" name="Trap" value="Trap"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="Trap">Trap</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="Trap">Trap</label>
                     <br />
                     <input type="checkbox" name="Rock" value="Rock"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="Rock">Rock</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="Rock">Rock</label>
                 </div>
             </div>
 
@@ -31,57 +31,57 @@ const FindABeat = ({updateBeatList}) => {
                 <div className="sideNavSubSection" id="moodInfo">
 
                     <input type="checkbox" name="Happy" value="Happy"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="Happy">Happy</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="Happy">Happy</label>
                     <br />
                     <input type="checkbox" name="Sad" value="Sad"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="Sad">Sad</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="Sad">Sad</label>
                     <br />
                     <input type="checkbox" name="Motivated" value="Motivated"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="Motivated">Motivated</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="Motivated">Motivated</label>
                     <br />
                     <input type="checkbox" name="Relaxed" value="Relaxed"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="Relaxed">Relaxed</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="Relaxed">Relaxed</label>
                     <br/>
 
 
 
 
 
-                    <input type="radio" name="FoodCategory" value="All" checked="checked"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="FoodCategory">All</label>
+                    {/* <input type="radio" name="FoodCategory" value="All" checked="checked"
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="FoodCategory">All</label>
                     <br />
                     <input type="radio" name="FoodCategory" value="Vegetables"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="FoodCategory">Vegetables</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="FoodCategory">Vegetables</label>
                     <br />
                     <input type="radio" name="FoodCategory" value="Fruits"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="FoodCategory">Fruits</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="FoodCategory">Fruits</label>
                     <br />
                     <input type="radio" name="FoodCategory" value="Dairy"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="FoodCategory">Dairy Products</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="FoodCategory">Dairy Products</label>
                     <br />
                     <input type="radio" name="FoodCategory" value="Beverages"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="FoodCategory">Juice/Beverages</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="FoodCategory">Juice/Beverages</label>
                     <br />
                     <input type="radio" name="FoodCategory" value="Cooking"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="FoodCategory">Cooking Products</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="FoodCategory">Cooking Products</label>
                     <br />
                     <input type="radio" name="FoodCategory" value="Bakery"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="FoodCategory">Bakery</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="FoodCategory">Bakery</label>
                     <br />
                     <input type="radio" name="FoodCategory" value="Meats"
-                        onClick="populateListProductChoices('dietInfo', 'foodCat', 'displayProduct')" />
-                    <label for="FoodCategory">Meats</label>
+                       onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
+                    <label htmlFor="FoodCategory">Meats</label> */}
                 </div>
             </div>
 

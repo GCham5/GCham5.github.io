@@ -1,7 +1,8 @@
 import React from 'react';
 
 const BeatCard = ({beats}) => {
-    const beatsList = beats.map(beat => {
+    const beatsList = beats.length ? (
+        beats.map(beat => {
         return (
             <div className="card beat" key={beat.id}>
                 <div className="card-body">
@@ -13,6 +14,8 @@ const BeatCard = ({beats}) => {
             </div>
         )
     })
+    ) :
+    <p>No beats found :(... Try changing your preferences!</p>
 
     return(
         <div className="beatGroup">
