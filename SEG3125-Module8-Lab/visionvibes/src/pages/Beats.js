@@ -1,36 +1,15 @@
 import React, { Component } from 'react';
 import BeatCard from '../components/BeatCard';
 import FindABeat from '../components/FindABeat';
+import beatsData from '../data/beatsData';
 import '../css/Beat.css'
 
 class Beats extends Component {
 
     state = {
-        beats: [
-            { title: 'Next', by: 'Illangelo', genre: 'RnB', mood: 'Sad', BPM: 87, key: 'E Major', id: 0 },
-            { title: 'Water', by: 'Kanye', genre: 'Hip-Hop', mood: 'Happy', BPM: 100, key: 'C Major', id: 1 },
-            { title: 'Overdue', by: 'Metro', genre: 'Trap', mood: 'Motivated', BPM: 168, key: 'F# Major', id: 2 },
-            { title: 'Jaded', by: '40', genre: 'RnB', mood: 'Sad', BPM: 87, key: 'E Minor', id: 3 },
-            { title: 'Swtich', by: 'Metro', genre: 'RnB', mood: 'Relaxed', BPM: 96, key: 'C Minor', id: 4 },
-            { title: 'D.D', by: 'Illangelo', genre: 'Rock', mood: 'Motivated', BPM: 111, key: 'A Major', id: 5 },
-            { title: 'Caravan', by: 'MounVibe', genre: 'RnB', mood: 'Happy', BPM: 120, key: 'C Major', id: 6 }
-        ],
-
-        initialBeats: [
-            { title: 'Next', by: 'Illangelo', genre: 'RnB', mood: 'Sad', BPM: 87, key: 'E Major', id: 0 },
-            { title: 'Water', by: 'Kanye', genre: 'Hip-Hop', mood: 'Happy', BPM: 100, key: 'C Major', id: 1 },
-            { title: 'Overdue', by: 'Metro', genre: 'Trap', mood: 'Motivated', BPM: 168, key: 'F# Major', id: 2 },
-            { title: 'Jaded', by: '40', genre: 'RnB', mood: 'Sad', BPM: 87, key: 'E Minor', id: 3 },
-            { title: 'Swtich', by: 'Metro', genre: 'RnB', mood: 'Relaxed', BPM: 96, key: 'C Minor', id: 4 },
-            { title: 'D.D', by: 'Illangelo', genre: 'Rock', mood: 'Motivated', BPM: 111, key: 'A Major', id: 5 },
-            { title: 'Caravan', by: 'MounVibe', genre: 'RnB', mood: 'Happy', BPM: 120, key: 'C Major', id: 6 }
-        ]
+        beats : beatsData,
+        initialBeats: beatsData
     }
-
-    // componentDidUpdate(prevProps, prevState) {
-    //     console.log('component updated');
-    //     console.log(prevState)
-    // }
 
     updateBeatList = (genreInfo, moodInfo) => {
         var s1 = document.getElementById(genreInfo);
@@ -89,7 +68,7 @@ class Beats extends Component {
         //     }
         // })
 
-        console.log("Beats from Mood ", beatsFromMood)
+        //console.log("Beats from Mood ", beatsFromMood)
 
         if (beatsFromGenre.length != 0 && beatsFromMood.length != 0) {
             for (var i = 0; i < beatsFromGenre.length; i++) {
@@ -107,11 +86,6 @@ class Beats extends Component {
                 finalBeatsList = [...beatsFromGenre, ...beatsFromMood];
             }
         }
-
-
-
-
-        // const finalUniqueBeatsList = [...new Set(finalBeatsList)];
 
         console.log(finalBeatsList);
         this.setState({

@@ -51,6 +51,11 @@
 
   .beat {
       border: 0.1px solid black;
-      max-width: 800px;
-      margin: 5px;
+      max-width: 200px;
+      margin: 10px;
+  }
+
+  .beatPic {
+      height: 100px;
+      width: 150px;
   }

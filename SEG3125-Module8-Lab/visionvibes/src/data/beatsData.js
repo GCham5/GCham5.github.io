@@ -1,67 +1,67 @@
-export let beatsData = {
-    
-    "Next":
+let beatsData = [
     {
-        "Producer": 'Illangelo',
-        "ProducerId": 2,
-        "Genre": 'RnB',
-        "BPM": '87 BPM',
-        "Key": 'E Major',
-        "Id": 0
+        'title': 'Next',
+        'by': 'Illangelo', 
+        'genre': 'RnB', 
+        'mood': 'Sad', 
+        'BPM': 87, 
+        'key': 'E Major',
+         'id': 0 
     },
-    "Water":
     {
-        "Producer": 'Kanye',
-        "ProducerId": 1,
-        "Genre": 'Hip-Hop',
-        "BPM": '100 BPM',
-        "Key": 'C Major',
-        "Id": 1
+        'title': 'Water',
+        'by': 'Kanye', 
+        'genre': 'Hip-Hop', 
+        'mood': 'Happy', 
+        'BPM': 100, 
+        'key': 'C Major',
+         'id': 1 
     },
-    "Overdue":
     {
-        "Producer": 'Metro',
-        "ProducerId": 3,
-        "Genre": 'Trap',
-        "BPM": '168 BPM',
-        "Key": 'F# Major',
-        "Id": 2
+        'title': 'Overdue',
+        'by': 'Metro', 
+        'genre': 'Trap', 
+        'mood': 'Motivated', 
+        'BPM': 168, 
+        'key': 'F# Major',
+         'id': 2
     },
-    "Jaded":
     {
-        "Producer": '40',
-        "ProducerId": 4,
-        "Genre": 'RnB',
-        "BPM": '87 BPM',
-        "Key": 'E Minor',
-        "Id": 3
+        'title': 'Jaded',
+        'by': '40', 
+        'genre': 'RnB', 
+        'mood': 'Sad', 
+        'BPM': 87, 
+        'key': 'E Minor',
+         'id': 3
     },
-    "Switch":
     {
-        "Producer": 'Metro',
-        "ProducerId": 3,
-        "Genre": 'RnB',
-        "BPM": '96 BPM',
-        "Key": 'C Minor',
-        "Id": 4
+        'title': 'Switch',
+        'by': 'Metro', 
+        'genre': 'RnB', 
+        'mood': 'Relaxed', 
+        'BPM': 96, 
+        'key': 'C Minor',
+         'id': 4
     },
-    "D.D":
     {
-        "Producer": 'Illangelo',
-        "ProducerId": 2,
-        "Genre": 'Rock',
-        "BPM": '111 BPM',
-        "Key": 'A Major',
-        "Id": 5
+        'title': 'D.D.',
+        'by': 'Illangelo', 
+        'genre': 'Rock', 
+        'mood': 'Motivated', 
+        'BPM': 111, 
+        'key': 'A Major',
+         'id': 5
     },
-    "Caravan":
     {
-        "Producer": 'MounVibe',
-        "ProducerId": 0,
-        "Genre": "RnB",
-        "BPM": '120 BPM',
-        "Key": 'C Major',
-        "Id": 6
-    }
+        'title': 'Caravan',
+        'by': 'MounVibe', 
+        'genre': 'RnB', 
+        'mood': 'Happy', 
+        'BPM': 120, 
+        'key': 'C Major',
+         'id': 6 
+    },
+]
 
-}
+export default beatsData
