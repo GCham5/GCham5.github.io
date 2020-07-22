@@ -7,14 +7,38 @@ import Beats from './pages/Beats';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import Page404 from './pages/Page404';
+import langData from './data/language.js'
 
 
 class App extends Component {
+
+  state = {
+    lang: langData['lang']
+  }
+
+  changeLanguage = () => {
+
+    if (this.state.lang === "EN") {
+      this.setState({
+        lang: 'FR'
+      })
+      langData['lang'] = "FR"
+
+    } else {
+      this.setState({
+        lang: 'EN'
+      })
+      langData['lang'] = "EN"
+
+    }
+  }
+
+
   render() {
     return (
       <BrowserRouter>
         <div className="vision-app">
-          <Navbar />
+          <Navbar changeLanguage={this.changeLanguage} />
           <Switch>
             <Route exact path='/' component={Home} />
             <Route path='/creatives' component={Creatives} />

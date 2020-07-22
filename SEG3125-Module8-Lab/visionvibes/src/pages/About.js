@@ -11,8 +11,9 @@ const About = () => {
             </div>
             <div className="container aboutUsContent">
                 <h4>We know it's sometimes hard to find someone who shares the same ideas and vision as you. That's why we created
-                VisionVibes. Here, you'll find like minded people. With VisionVibes, you find explore and find the perfect beat for you idea. Want more than a beat?
-                Find the perfect collaborator and shake the music world.
+                VisionVibes. Here, you'll find like minded people. With VisionVibes, you find explore and find the perfect beat for you idea using our FindYourBeat algorithm that 
+                finds the right beat for you. Want more than a beat?
+                Find the perfect collaborator through our Creative section and shake the music world.
                 </h4>
             </div>
             <div className="container aboutUsContent">
