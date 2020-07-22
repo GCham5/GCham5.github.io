@@ -12,6 +12,7 @@ const Home = () => {
         <div className="Home container-fluid">
             <Landing />
             <TodaysBeats/>
+            <hr></hr>
             <TodaysCreatives/>
         </div>
     )

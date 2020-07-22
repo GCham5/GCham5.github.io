@@ -8,7 +8,7 @@ class TodaysBeats extends Component {
     }
 
     render() {
-        const reducedBeats = beatsData.slice(0,4)
+        const reducedBeats = beatsData.slice(0,3)
         return (
             <div className=" container-fluid ">
                 <h1>Today's Beats</h1>

@@ -1,5 +1,6 @@
 .jumbotron {
     min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/studio.png");
 }
 
 .mainText {
@@ -21,4 +22,19 @@
 .row {
     flex-wrap: nowrap;
     justify-content: center;
+}
+
+#root {
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+}
+
+h1 {
+    color: white;
+}
+
+hr {
+    border: 2px solid white;
+     border-radius: 5px;
+     box-shadow: 0 0 10px 1px black;
 }

@@ -20,9 +20,9 @@ const FindABeat = ({updateBeatList}) => {
                        onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
                     <label htmlFor="Trap">Trap</label>
                     <br />
-                    <input type="checkbox" name="Rock" value="Rock"
+                    <input type="checkbox" name="Gospel" value="Gospel"
                        onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
-                    <label htmlFor="Rock">Rock</label>
+                    <label htmlFor="Gospel">Gospel</label>
                 </div>
             </div>
 

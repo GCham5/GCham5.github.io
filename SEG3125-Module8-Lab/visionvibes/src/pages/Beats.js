@@ -7,7 +7,7 @@ import '../css/Beat.css'
 class Beats extends Component {
 
     state = {
-        beats : beatsData,
+        beats: beatsData,
         initialBeats: beatsData
     }
 
@@ -41,34 +41,20 @@ class Beats extends Component {
         for (var i = 0; i < this.state.initialBeats.length; i++) {
             const beat = this.state.initialBeats[i];
             for (var x = 0; x < selectedGenres.length; x++) {
-                if(beat.genre === selectedGenres[x]){
+                if (beat.genre === selectedGenres[x]) {
                     beatsFromGenre.push(beat)
-                }   
+                }
             }
         }
-
-        // console.log(selectedMoods);
-        // const beatsFromGenre = this.state.initialBeats.filter(beat => {
-        //     for (var i = 0; i < selectedGenres.length; i++) {
-        //         return beat.genre === selectedGenres[i]
-        //     }
-        // });
 
         for (var i = 0; i < this.state.initialBeats.length; i++) {
             const beat = this.state.initialBeats[i];
             for (var x = 0; x < selectedMoods.length; x++) {
-                if(beat.mood === selectedMoods[x]){
+                if (beat.mood === selectedMoods[x]) {
                     beatsFromMood.push(beat)
-                }   
+                }
             }
         }
-        // const beatsFromMood = this.state.initialBeats.filter(beat => {
-        //     for (var i = 0; i < selectedMoods.length; i++) {
-        //         return beat.mood === selectedMoods[i]
-        //     }
-        // })
-
-        //console.log("Beats from Mood ", beatsFromMood)
 
         if (beatsFromGenre.length != 0 && beatsFromMood.length != 0) {
             for (var i = 0; i < beatsFromGenre.length; i++) {
@@ -98,11 +84,19 @@ class Beats extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <h1>Beats</h1>
-                <FindABeat updateBeatList={this.updateBeatList} />
-                <div className="beatsContainer">
-                    <BeatCard beats={this.state.beats} />
+                <div className="mainImage beatsBG" >
+                    <div className="mainText">
+                        <h1 className="display-4">Beats</h1>
+                    </div>
                 </div>
+                <hr></hr>
+                <div className="beatsContent">
+                    <FindABeat updateBeatList={this.updateBeatList} />
+                    <div className="beatsContainer">
+                        <BeatCard beats={this.state.beats} />
+                    </div>
+                </div>
+
             </div>
         )
     }

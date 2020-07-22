@@ -3,7 +3,8 @@
     height: auto;
     width: 175px;
     margin-right: 10px;
-    position: fixed;
+    position: sticky;
+    float: left;
     left: 0;
     background-color: white;
     border: 1px solid black;
@@ -51,8 +52,11 @@
 
   .beat {
       border: 0.1px solid black;
-      max-width: 200px;
+      max-width: 500px;
       margin: 10px;
+      box-shadow: 0 0 10px 1px white;
+      color: azure;
+      background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3))
   }
 
   .beatPic {
@@ -64,3 +68,19 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  .beatsBG {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/beatsBG.png");
+}
+
+
+.mainText {
+    padding-top: 200px;
+    height: 500px;
+    text-align: center;
+    color: white;
+}
+
+.beatsContent {
+  margin-top: 25px;
+}

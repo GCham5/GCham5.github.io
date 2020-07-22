@@ -1,10 +1,39 @@
 .creative {
-    border: 0.1px solid black;
-    max-width: 200px;
+    border: 2px solid black;
+    max-width: 300px;
     margin: 10px;
+    box-shadow: 0 0 10px 1px white;
+    color: azure;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .3))
+}
+
+.card-title {
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .creatives {
     display: flex;
     flex-wrap: wrap;
 }
+
+.profileThumbnail {
+    width: 250px;
+    height: 250px;
+}
+
+.creativeBG {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/creativeBG.png");
+}
+
+.creativesContent {
+    margin-top: 25px;
+}
+
+ /* .mainImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/40.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  } */

@@ -5,15 +5,18 @@ import { withRouter } from "react-router-dom";
 
 class TodaysCreatives extends Component {
     state = {
-        creatives: creativeData
+        creatives: creativeData,
+        creativeToShow: null
     }
 
     showProfile = (creative) => {
-        this.props.history.push('/creatives')
+        this.props.history.push("/profile", {
+            creativeToShow: creative
+        })
     }
 
     render() {
-        const reducedCreatives = creativeData.slice(0,3)
+        const reducedCreatives = creativeData.slice(0, 3)
         return (
             <div className="container-fluid">
                 <h1>Today's Creatives</h1>
