@@ -38,3 +38,7 @@ hr {
      border-radius: 5px;
      box-shadow: 0 0 10px 1px black;
 }
+
+.mainContainer {
+    min-height: 1500px;
+}

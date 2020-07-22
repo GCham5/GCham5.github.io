@@ -9,7 +9,7 @@ import '../css/Home.css'
 
 const Home = () => {
     return (
-        <div className="Home container-fluid">
+        <div className="Home container-fluid mainContainer">
             <Landing />
             <TodaysBeats/>
             <hr></hr>

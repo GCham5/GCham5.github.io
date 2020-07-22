@@ -25,7 +25,7 @@ class Creatives extends Component {
 
     render() {
         return (
-            <div className="container-fluid creativeMain">
+            <div className="container-fluid creativeMain mainContainer">
                 <div className="mainImage creativeBG" >
                     <div className="mainText">
                         <h1 className="display-4">Creatives</h1>

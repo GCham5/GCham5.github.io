@@ -83,7 +83,7 @@ class Beats extends Component {
 
     render() {
         return (
-            <div className="container-fluid">
+            <div className="container-fluid mainContainer">
                 <div className="mainImage beatsBG" >
                     <div className="mainText">
                         <h1 className="display-4">Beats</h1>
