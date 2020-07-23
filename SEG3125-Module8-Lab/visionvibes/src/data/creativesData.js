@@ -6,6 +6,7 @@ let creativesData = [
         'genre': 'Hip-Hop',
         'img': 'mike.png',
         'cardPic': 'mikeP.png',
+        'src': "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/733492375&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
         id: 0
     },
     {
@@ -15,8 +16,7 @@ let creativesData = [
         'genre': 'Hip-Hop',
         'img': 'kanye.png',
         'cardPic': 'kanyeP.png',
-        // 'src': "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/815579020&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
-        "song": '<iframe width="50%" height={166} scrolling="no" frameBorder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/815579020&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true" /><div style={{fontSize: \'10px\', color: \'#cccccc\', lineBreak: \'anywhere\', wordBreak: \'normal\', overflow: \'hidden\', whiteSpace: \'nowrap\', textOverflow: \'ellipsis\', fontFamily: \'Interstate, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Garuda, Verdana, Tahoma, sans- serif\', fontWeight: 100}}><a href="https://soundcloud.com/aiden-tisinger" title="Gospel /rap unreleased" target="_blank" style={{color: \'#cccccc\', textDecoration: \'none\'}}>Gospel /rap unreleased</a> · <a href="https://soundcloud.com/aiden-tisinger/kanye-west-wake-the-dead-jesus-is-king" title="Kanye West - Wake The Dead [Jesus Is King]" target="_blank" style={{color: \'#cccccc\', textDecoration: \'none\'}}>Kanye West - Wake The Dead [Jesus Is King]</a></div>',
+        'src': "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/255766399&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
         id: 1
     },
     {
@@ -26,6 +26,7 @@ let creativesData = [
         'genre': 'RnB',
         'img': 'illangelo.png',
         'cardPic': 'illangeloP.png',
+        'src': "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/253876863&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
         id: 2
     },
     {
@@ -45,6 +46,7 @@ let creativesData = [
         'genre': 'RnB',
         'img': '40.png',
         'cardPic': '40P.png',
+        'src': "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/257461491&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
         id: 4
     },
     {
@@ -54,6 +56,7 @@ let creativesData = [
         'genre': 'Trap',
         'img': 'murda.png',
         'cardPic': 'murdaP.png',
+        'src': "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/278366442&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
         id: 5
     }
 ]

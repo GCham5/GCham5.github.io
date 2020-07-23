@@ -1,31 +1,29 @@
 import React, { Component } from 'react';
 import CreativeCards from '../components/CreativeCards';
 import creativeData from '../data/creativesData';
-import { withRouter } from "react-router-dom";
+import { withRouter, useHistory } from "react-router-dom";
+import langData from '../data/language';
 
-class TodaysCreatives extends Component {
-    state = {
-        creatives: creativeData,
-        creativeToShow: null
-    }
+const TodaysCreatives = () => {
 
-    showProfile = (creative) => {
-        this.props.history.push("/profile", {
+    const history = useHistory();
+    const lang = langData['lang'];
+
+    const showProfile = (creative) => {
+        history.push("/profile", {
             creativeToShow: creative
         })
     }
-
-    render() {
         const reducedCreatives = creativeData.slice(0, 3)
         return (
             <div className="container-fluid">
-                <h1>Today's Creatives</h1>
+                <h1>{lang === "EN" ? "Today's Creatives" : "Créations d'aujourd'hui"}</h1>
                 <div className="container subSection">
-                    <CreativeCards creatives={reducedCreatives} showProfile={this.showProfile} />
+                    <CreativeCards creatives={reducedCreatives} showProfile={showProfile} />
                 </div>
             </div>
         )
     }
-}
+
 
 export default withRouter(TodaysCreatives)

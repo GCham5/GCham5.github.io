@@ -1,0 +1,13 @@
+.comment {
+    padding: 2px;
+}
+
+.comments {
+    border: 2px solid black;
+}
+
+.commentHr{
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 0px black;
+}

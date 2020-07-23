@@ -1,10 +1,14 @@
-import React from 'react'
+import React from 'react';
+import langData from '../data/language';
 
 const FindABeat = ({updateBeatList}) => {
+
+   const lang = langData['lang']
+
     return (
         //  Inspired by https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
         <div className="sidenav">
-            <p id="sideNavTitle">FILTER BY</p>
+            <p id="sideNavTitle">{lang === 'EN' ? "FILTER BY" : "FILTRER PAR"}</p>
             <div className="sideNavSection">
                 <p>Genre</p>
                 <div className="sideNavSubSection" id="genreInfo">
@@ -27,24 +31,24 @@ const FindABeat = ({updateBeatList}) => {
             </div>
 
             <div className="sideNavSection">
-                <p>Mood</p>
+                <p>{lang === 'EN' ? 'Mood' : 'Ambiance'}</p>
                 <div className="sideNavSubSection" id="moodInfo">
 
                     <input type="checkbox" name="Happy" value="Happy"
                        onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
-                    <label htmlFor="Happy">Happy</label>
+                    <label htmlFor="Happy">{lang === 'EN' ? 'Happy' : 'Heureux'}</label>
                     <br />
                     <input type="checkbox" name="Sad" value="Sad"
                        onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
-                    <label htmlFor="Sad">Sad</label>
+                    <label htmlFor="Sad">{lang === 'EN' ? 'Sad' : 'Triste'}</label>
                     <br />
                     <input type="checkbox" name="Motivated" value="Motivated"
                        onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
-                    <label htmlFor="Motivated">Motivated</label>
+                    <label htmlFor="Motivated">{lang === 'EN' ? 'Motivated' : 'Motivé'}</label>
                     <br />
                     <input type="checkbox" name="Relaxed" value="Relaxed"
                        onClick={() => {updateBeatList('genreInfo','moodInfo')}} />
-                    <label htmlFor="Relaxed">Relaxed</label>
+                    <label htmlFor="Relaxed">{lang === 'EN' ? 'Relaxed' : 'Relâché'}</label>
                     <br/>
 
 

@@ -77,8 +77,6 @@ class Beats extends Component {
         this.setState({
             beats: finalBeatsList
         })
-
-
     }
 
     render() {

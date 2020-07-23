@@ -1,19 +1,22 @@
 import React from 'react';
 import '../css/About.css';
+import langData from '../data/language';
 
 const About = () => {
+
+    const lang = langData['lang']
+
     return (
         <div className='container-fluid aboutContainer' >
             <div className="mainImage aboutBG" >
                 <div className="mainText">
-                    <h1 className="display-4">About Us</h1>
+                    <h1 className="display-4">{lang === "EN" ? "About Us" : "à propos de nous"}</h1>
                 </div>
             </div>
             <div className="container aboutUsContent">
-                <h4>We know it's sometimes hard to find someone who shares the same ideas and vision as you. That's why we created
-                VisionVibes. Here, you'll find like minded people. With VisionVibes, you find explore and find the perfect beat for you idea using our FindYourBeat algorithm that 
-                finds the right beat for you. Want more than a beat?
-                Find the perfect collaborator through our Creative section and shake the music world.
+                <h4>{lang === "EN" ? "We know it's sometimes hard to find someone who shares the same ideas and vision as you. That's why we created VisionVibes. Here, you'll find like-minded people. With VisionVibes, you find can explore and find the perfect beat for your idea using our FindYourBeat algorithm that finds the right beat for you. Want more than a beat? Find the perfect collaborator through our Creative section and shake the music world." 
+                : "Nous savons qu'il est parfois difficile de trouver quelqu'un qui partage les mêmes idées et la même vision que vous. C'est pourquoi nous avons créé VisionVibes. Ici, vous trouverez des personnes partageant les mêmes idées. Avec VisionVibes, vous pouvez explorer et trouver le rythme parfait pour votre idée en utilisant notre algorithme FindYourBeat qui trouve le rythme qui vous convient. Vous voulez plus qu'un rythme? Trouvez le collaborateur idéal grâce à notre section Créative et secouez le monde de la musique."}
+
                 </h4>
             </div>
             <div className="container aboutUsContent">
