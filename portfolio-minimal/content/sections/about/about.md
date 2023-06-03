@@ -1,14 +1,14 @@
 ---
 imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
-imageAlt: "About Gatsby Theme Portfolio Minimal"
+imageAlt: "Me!"
 ---
+Hey there! I'm Georges, and I'm excited to have you visit my personal website. I recently graduated with a degree in Software Engineering from the University of Ottawa. Currently, I work as a Software Developer @ Ericsson, focusing on Cloud RAN Micro-services. On the side, I also volunteer as a Software Developer @ Software For Love!
 
-Portfolio Minimal is a Gatsby Theme that creates outstanding one-pages portfolio within minutes!
+I'm passionate about fullstack and backend development. My main experience lies in .NET and TypeScript, but I love exploring different frameworks and languages through side projects. I have a genuine curiosity for understanding how things work and why they work.
 
-It has predefined sections for your bio, skills, projects, and contact details. If you are a writer on Medium, you can integrate your latest articles in a distinct section as well. While building the theme, I tried to keep the setup as simple as possible while keeping everything configurable if you like to.
+At the moment, I'm diving into the fascinating world of distributed systems. This interest was sparked by my work at Ericsson, where I get to learn about creating complex, scalable software solutions.
 
-Using theme composition, you can easily customize the CSS theme to your own preferences - e.g. change colors, fonts, etc.
+Beyond the world of tech, I have a deep, deep love for music (as you can probably tell by some of my projects below). I also enjoy dabbling in music production from time to time. Additionally, I've been actively involved in the Lebanese Culture Club at uOttawa for the past three years, where we organize social events and galas to celebrate Lebanese culture.
 
-Last but not least, it has some cool features you can opt-in to: Dark Mode, Splash Screen, Cookie Banner, and more to find out :)
+Feel free to explore my website to learn more about my projects, experiences, and the unique combination of skills and passions that drive me. Thank you for stopping by, and I'm excited to connect with you soon!
 
-Photo by <a href="https://unsplash.com/@charlesdeluvio?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank" rel="nofollow noopener noreferrer" aria-label="External Link"><u>Charles Deluvio</u></a> on Unsplash
