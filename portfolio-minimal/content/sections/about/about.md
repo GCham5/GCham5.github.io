@@ -2,7 +2,7 @@
 imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
 imageAlt: "Me!"
 ---
-Hey there! I'm Georges, and I'm excited to have you visit my personal website. I recently graduated with a degree in Software Engineering from the University of Ottawa. Currently, I work as a Software Developer @ Ericsson, focusing on Cloud RAN Micro-services. On the side, I also volunteer as a Software Developer @ Software For Love!
+Hey there! I'm Georges, and I'm glad you're here. I recently graduated with a degree in Software Engineering from the University of Ottawa. Currently, I work as a Software Developer @ Ericsson, focusing on Cloud RAN Micro-services. On the side, I also volunteer as a Software Developer @ Software For Love! For more of my work experience, check out my resume.
 
 I'm passionate about fullstack and backend development. My main experience lies in .NET and TypeScript, but I love exploring different frameworks and languages through side projects. I have a genuine curiosity for understanding how things work and why they work.
 

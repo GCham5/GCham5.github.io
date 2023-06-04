@@ -54,6 +54,27 @@
     },
     {
       "visible": true,
+      "category": "Capstone Project",
+      "title": "⏱️ Tempus",
+      "description": "Custom-built HR software for a consulting company, allowing for seamless onboarding and efficient employee management.",
+      "tags": [
+        "Nestjs",
+        "Angular",
+        "Postgres",
+        "Docker",
+        "NgRx",
+        "JWT",
+        "Passport"
+      ],
+      "image": {
+        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
+        "alt": "Quick Setup",
+        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+      },
+      "links": []
+    },
+    {
+      "visible": true,
       "category": "",
       "title": "👟 Sneaker Beast",
       "description": "Do you love sneakers but don't love the hefty price tags? Meet Sneaker Beast, the Airbnb of the shoe world.  Rent out your favorite kicks at unbeatable rates and step up your style game without breaking the bank.",
@@ -66,9 +87,8 @@
         "Jest"
       ],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "src": "../../images/sneakerbeast.png",
+        "alt": "Sneaker Beast"
       },
       "links": [
         {
@@ -90,8 +110,8 @@
         "Canvas"
       ],
       "image": {
-        "src": "../../images/kelly-sikkema-Hl3LUdyKRic-unsplash.jpg",
-        "alt": "Extendable Layout"
+        "src": "../../images/immerse.png",
+        "alt": "Immerse"
       },
       "links": [
         {
