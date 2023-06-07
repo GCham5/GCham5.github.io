@@ -25,8 +25,12 @@
           "url": "/#about"
         },
         {
+          "label": "Skills",
+          "url": "/#skills"
+        },
+        {
           "label": "Projects",
-          "url": "/#features"
+          "url": "/#projects"
         },
         {
           "label": "Github",

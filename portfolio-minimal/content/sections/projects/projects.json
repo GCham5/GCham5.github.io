@@ -14,9 +14,8 @@
         "Chart.js"
       ],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "src": "../../images/wrappedup-graphs.png",
+        "alt": "WrappedUp"
       },
       "links": [
         {
@@ -37,9 +36,8 @@
         "Chrome Extension"
       ],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "src": "../../images/shopsmart.png",
+        "alt": "ShopSmart"
       },
       "links": [
         {
@@ -67,9 +65,8 @@
         "Passport"
       ],
       "image": {
-        "src": "../../images/clement-h-95YRwf6CNw8-unsplash.jpg",
-        "alt": "Quick Setup",
-        "linkTo": "https://github.com/konstantinmuenster/gatsby-starter-portfolio-minimal-theme"
+        "src": "../../images/tempus.png",
+        "alt": "Tempus"
       },
       "links": []
     },

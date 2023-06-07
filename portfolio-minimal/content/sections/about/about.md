@@ -1,10 +1,10 @@
 ---
-imageSrc: "../../images/charles-deluvio-DgoyKNgPiFQ-unsplash.jpg"
+imageSrc: "../../images/me.jpeg"
 imageAlt: "Me!"
 ---
-Hey there! I'm Georges, and I'm glad you're here. I recently graduated with a degree in Software Engineering from the University of Ottawa. Currently, I work as a Software Developer @ Ericsson, focusing on Cloud RAN Micro-services. On the side, I also volunteer as a Software Developer @ Software For Love! For more of my work experience, check out my resume.
+Hey there! I'm Georges, and I'm glad you're here. I recently graduated with a degree in Software Engineering from the University of Ottawa. Currently, I work as a **Software Developer @ Ericsson**, focusing on Cloud RAN Micro-services. On the side, I also volunteer as a **Software Developer @ [Software For Love!](https://www.softwareforlove.com/)** For more of my work experience, check out my resume.
 
-I'm passionate about fullstack and backend development. My main experience lies in .NET and TypeScript, but I love exploring different frameworks and languages through side projects. I have a genuine curiosity for understanding how things work and why they work.
+I'm passionate about **fullstack and backend development**. My main experience lies in .NET and TypeScript, but I love exploring different frameworks and languages through side projects. I have a genuine curiosity for understanding how things work and why they work.
 
 At the moment, I'm diving into the fascinating world of distributed systems. This interest was sparked by my work at Ericsson, where I get to learn about creating complex, scalable software solutions.
 
